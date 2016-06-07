@@ -1,0 +1,31 @@
+* {
+	border: 1px dashed blue;
+}
+
+div {
+	height: 50px;
+	width: 100px;
+	border: 2px solid black;
+	border-radius: 5px;
+	display: block;
+	/*Add your CSS here!*/
+	
+}
+
+#one {
+    display:inline-block;
+	background-color: #FF0000;
+}
+
+#two {
+     display:inline-block;
+	background-color: #0000FF;
+}
+
+#three {
+	background-color: #FFD700;
+}
+
+#four {
+	background-color: #308014;
+}

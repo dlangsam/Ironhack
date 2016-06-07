@@ -1,0 +1,106 @@
+#logo{
+	padding-top: 109px;
+	padding-bottom: 5px;
+}
+#search{
+	margin: auto;
+	width: 443px;
+	height: 40px;
+	border: 1px solid #9E9E9E;
+	display:block;
+}
+img{
+	height:92px;
+	width:272px;
+}
+body, html {
+	font-size:small;
+}
+div {
+	display:block;
+}
+
+center {
+    display: block;
+    text-align: -webkit-center;
+}
+input[type="submit"] {
+    height: 36px;
+    line-height: 27px;
+   
+
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}
+.heading{
+
+    top: -295px;
+    right: 0;
+    width: 100%;
+    font-family:arial, sans-serif;
+    padding-right: 15px;
+    display: inline-block;
+
+}
+#name{
+
+
+	color: #000;
+	min-width: 60px;
+    overflow: hidden;
+    flex: 0 1 auto;
+    text-overflow: ellipsis;
+    display: inline-block;
+    line-height:24px;
+    outline:none;
+    vertical-align: middle;
+    text-align:right;
+    font-size:13px;
+    
+    min-width: 315px;
+    padding-left: 30px;
+    
+    position: relative;
+    opacity: .75;
+    z-index: 986;
+    justify-content: flex-end;
+     margin-left: 0!important;
+    margin-right: 0!important;
+    text-align:right;
+
+
+}
+
+#email{
+
+
+	color: #000;
+	min-width: 60px;
+  
+    display: inline-block;
+    line-height:24px;
+    outline:none;
+    vertical-align: middle;
+    text-align:right;
+    font-size:13px;
+    padding-left: 30px;
+    position: relative;
+    opacity: .55;
+    z-index: 986;
+    justify-content: flex-end;
+     margin-left: 0!important;
+    margin-right: 0!important;
+    text-align:right;
+
+
+}

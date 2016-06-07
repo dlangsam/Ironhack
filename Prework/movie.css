@@ -1,0 +1,49 @@
+article{
+	width:1000px;
+	height:1000px;
+	background-color: pink;
+	margin: auto;
+	font-family:Arial;
+}
+header, footer {
+	width:100%;
+	height: 100px;
+	background-color: black;
+}
+h1{
+	text-align:center;
+	font-family:Arial;
+}
+p{
+	margin: 5px;
+}
+
+#poster{
+	width: 400px;
+	height: 600px;
+	margin: 0px 20px;
+}
+#container1{
+	width: 440px;
+	height: 600px;
+	margin: 25px 30px;
+	background-color:black;
+	float:left;
+}
+#container2{
+	width: 428px;
+	height: 598px;
+	border: 2px solid black;
+	margin: 25px 30px;
+	background-color:#D2BDDE;
+	float: right;
+}
+#container3{
+	width: 938px;
+	height:298px;
+	border: 2px solid black;
+	background-color: #D2BDDE;
+	margin: 25px 30px;
+	clear:both;
+	
+}

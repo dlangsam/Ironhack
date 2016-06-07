@@ -1,0 +1,113 @@
+#logo{
+    height:92px;
+    width:272px;
+	padding-top: 109px;
+	padding-bottom: 5px;
+    display:block;
+    margin: auto;
+}
+#search{
+	margin: auto;
+	max-width: 484px;
+	height: 40px;
+	border: 1px solid #d9d9d9;
+	display:block;
+}
+
+.mike{
+
+    background: url(microphone.jpg) no-repeat -3px 0;
+    background-size: 24px 24px;
+    display: inline-block;
+    height: 23px;
+    width: 17px;
+    vertical-align: middle;
+    line-height:38px;
+    margin-top:5px;
+    margin-left: 450px;
+}
+
+body, html {
+	font-size:small;
+}
+header{
+    margin-left:800px;
+    margin-right:20px;
+    float:right;
+    top:0;
+}
+
+.h{
+    line-height: 24px;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    padding-left:20px;
+    padding-top: 20px;
+    
+}
+#mail, #images{
+        opacity: .75;
+       
+
+}
+#face{
+    height: 28px;
+    width: 28px;
+      vertical-align: middle;
+}
+.icon{
+    height: 18px;
+    width: 18px;
+    opacity: .55;
+      vertical-align: middle;
+}
+/*#image{
+    margin-right:100px;
+}*/
+center {
+    display: block;
+}
+input[type="submit"] {
+    height: 36px;
+    line-height: 27px;
+   
+
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}
+footer{
+    background-color:rgb(242, 242, 242);
+    line-height: 40px;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    color: #666;
+    position:absolute;
+   bottom:0;
+   width:100%;
+}
+div{
+    display:inline-block;
+}
+.f{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#left_side{
+    padding-left:5px;
+    float: left;
+    
+}
+#right_side{
+    padding-right: 5px;
+    float: right;
+}

@@ -1,0 +1,92 @@
+Devorahs-MacBook-Pro:~ devorahlangsam$ ls
+Applications	Downloads	Library		MyProject	eclipse
+Desktop		Dropbox		Movies		Pictures
+Documents	Ironhack	Music		Public
+Devorahs-MacBook-Pro:~ devorahlangsam$ mkdir git-practice
+Devorahs-MacBook-Pro:~ devorahlangsam$ ls
+Applications	Downloads	Library		MyProject	eclipse
+Desktop		Dropbox		Movies		Pictures	git-practice
+Documents	Ironhack	Music		Public
+Devorahs-MacBook-Pro:~ devorahlangsam$ cd git-practice/
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git init
+Initialized empty Git repository in /Users/devorahlangsam/git-practice/.git/
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ touch three_doors.txt
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ open three_doors.txt
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git add three_doors.txt 
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git commit -m "first commit"
+[master (root-commit) 36d3434] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 three_doors.txt
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git status
+On branch master
+nothing to commit, working directory clean
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git log
+commit 36d3434b84f8c43c240baed06e3445e261e4f200
+Author: Devorah Langsam <devorah@langsam.org>
+Date:   Tue May 24 18:39:36 2016 -0400
+
+    first commit
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ open three_doors.txt 
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git diff
+diff --git a/three_doors.txt b/three_doors.txt
+index 88a0fba..06af8c9 100644
+--- a/three_doors.txt
++++ b/three_doors.txt
+@@ -1 +1,2 @@
+-You are in a room with three doors. 
+\ No newline at end of file
++You are in a room with three doors. 
++Go through door 2. 
+\ No newline at end of file
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ touch first_choice.txt
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ open first_choice.txt
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git add first_choice.txt 
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git commit -m "add first choice"
+[master 626d05d] add first choice
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first_choice.txt
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ touch second_choice.txt
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ open second_choice.txt 
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git add second_choice.txt 
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git commit -m "Add second choice"
+[master 02f94c1] Add second choice
+ 1 file changed, 1 insertion(+)
+ create mode 100644 second_choice.txt
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git commit -m "Add car behind door 1"
+On branch master
+Changes not staged for commit:
+	modified:   second_choice.txt
+	modified:   three_doors.txt
+
+no changes added to commit
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git add second_choice.txt 
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git commit -m "Add car behind door 1"
+[master fa0ba4f] Add car behind door 1
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git branch new
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git branch
+* master
+  new
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git new
+git: 'new' is not a git command. See 'git --help'.
+
+Did you mean this?
+	notes
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git checkout new
+M	three_doors.txt
+Switched to branch 'new'
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ open second_choice.txt 
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git add second_choice.txt 
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git commit -m "Add puppy behind door 1"
+[new 4295419] Add puppy behind door 1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git checkout master
+M	three_doors.txt
+Switched to branch 'master'
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ git merge new
+Updating fa0ba4f..4295419
+Fast-forward
+ second_choice.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ open second_choice.txt 
+Devorahs-MacBook-Pro:git-practice devorahlangsam$ 
