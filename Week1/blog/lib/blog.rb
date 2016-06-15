@@ -4,41 +4,49 @@ require 'colorize'
 class Blog
 	def initialize
 		@post_list = []
+		@current_page = 1
+		@posts_per_page = 3
+		@num_pages = 1
 	end
 	def add_post(post)
 		@post_list.push(post)
 	end
+	def go_next()
+		if @current_page < @num_pages
+	 		@current_page += 1
+	 	end
+	end
+	def go_previous()
+		if @current_page > 1
+	 		@current_page -= 1
+	 	end
+	end
 	 def publish_front_page
 	 	sorted_posts = @post_list.sort{|post1, post2| post2.date <=> post1.date}
-	 	num_pages = sorted_posts.length/3 + 1
+	 	@num_pages = (sorted_posts.length/@posts_per_page.to_f).ceil
 
 
 	 	input = nil
 		#start_index = 0; end_index = 2;
-		current_page = 1 
 	 	while(input != "exit")
 	 			if input == "next"
-	 				if current_page < num_pages
-	 				 current_page += 1
-	 				end
+	 				go_next()
 	 			elsif input == "prev"
-	 				if current_page > 1
-	 					current_page -= 1
-	 				end
+	 				go_previous()
 	 			end
-	 			start_index = current_page * 3 - 3
-	 			end_index = current_page * 3 - 1
+	 			start_index = @current_page * @posts_per_page - @posts_per_page
+	 			end_index = @current_page * @posts_per_page - 1
 
 	 			
-	 			three_posts = sorted_posts[start_index...end_index];
-				three_posts.each do |post|
+	 			page_of_posts = sorted_posts[start_index..end_index];
+				page_of_posts.each do |post|
 					post.print_page
 				end
-				for i in 1..num_pages
-					if i == current_page
-						print "#{i}".colorize(:blue)
+				for i in 1..@num_pages
+					if i == @current_page
+						print "#{i} ".colorize(:blue)
 					else
-						print i
+						print "#{i} "
 					end
 				end
 				print "\n>"
