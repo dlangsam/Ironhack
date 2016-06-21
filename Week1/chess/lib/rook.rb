@@ -8,14 +8,14 @@ class Rook < Piece
 			@name = " wR "
 		else
 			@name = " bR "
-		end 
-		
+		end
+
 	end
-	
+
 	def can_move?(new_location)
-		diff_x = new_location.x - @loc.x
-		diff_y = new_location.y - @loc.y
-		if straight_move?(diff_x, diff_y)
+		diff = @loc.distance(new_location)
+
+		if straight_move?(diff[:x], diff[:y])
 			super(new_location)
 		else
 			false
