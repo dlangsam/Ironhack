@@ -1,12 +1,4 @@
 #piece.rb
-class Location
-	attr_accessor :x, :y
-	def initialize(x,y)
-		@x = x
-		@y = y
-	end
-end
-
 class Piece
 	@@white = "white"
 	@@black = "black"
@@ -34,7 +26,7 @@ class Piece
 		end
 		#check that it is a new location
 		#not moving is always not valid
-		new_location.x != @loc.x || new_location.y != @loc.y 
+		new_location.x != @loc.x || new_location.y != @loc.y
 
 	end
 end
