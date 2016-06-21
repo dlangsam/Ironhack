@@ -13,7 +13,7 @@ class Board
 	@@white= "white"
 	@@black= "black"
 	def initialize(pieces)
-		
+
 		@whites_turn = true
 		@layout = []
 		@pieces = pieces
@@ -28,8 +28,8 @@ class Board
 		setup_pieces
 	end
 	def setup_pieces
-		
-	
+
+
 
 		@pieces.each do |piece|
 			piece_location = piece.loc
@@ -89,7 +89,7 @@ class Board
 			false
 		elsif (piece.color == "white") != @whites_turn
 			puts "You can't move your opponent's piece"
-			false	
+			false
 		elsif location.x < 0 || location.x > 7 || location.y < 0 && location.y > 7
 			puts "Invalid spot on board"
 			false
@@ -103,27 +103,23 @@ class Board
 				false
 			else
 				other_piece.killed
-				original_loc = piece.loc
-				piece.move(location)
-				@layout[location.y][location.x] = piece
-				@layout[original_loc.y][original_loc.x] = " __ "
+
+				change_piece_position(location, piece)
 				pawn_check(location, piece)
 				print_board
 				@whites_turn = !@whites_turn
 				true
 			end
 		else
-			original_loc = piece.loc
-			piece.move(location)
-			@layout[location.y][location.x] = piece
-			@layout[original_loc.y][original_loc.x] = " __ "
+			change_piece_position(piece, location)
+
 			pawn_check(location, piece)
 			print_board
 			@whites_turn = !@whites_turn
 			true
 		end
 
-	end	
+	end
 
 	def print_board
 		@layout.reverse.each do |row|
@@ -136,6 +132,12 @@ class Board
 			end
 			puts ""
 		end
+	end
+
+	def change_piece_position(piece, new_location)
+		@layout[new_location.y][new_location.x] = piece
+		@layout[piece.loc.y][piece.loc.x] = " __ "
+		piece.move(new_location)
 	end
 
 end

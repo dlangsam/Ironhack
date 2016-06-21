@@ -30,6 +30,7 @@ class Piece
 	def can_move?(new_location)
 		if !@alive
 			puts "Piece not in play"
+			return false
 		end
 		#check that it is a new location
 		#not moving is always not valid
