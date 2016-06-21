@@ -2,13 +2,20 @@
 class Piece
 	@@white = "white"
 	@@black = "black"
-	attr_reader :loc, :name, :color, :true
+	attr_reader :loc, :name, :color, :alive
+
 	def initialize(location, color)
-		@name = ""
 		@loc = location
 		@color = color
 		@alive = true
+
+		if color == "white"
+			@name = " w#{label} "
+		else
+			@name = " b#{label} "
+		end
 	end
+
 	def killed
 		@alive = false
 	end

@@ -2,14 +2,9 @@ require_relative("piece.rb")
 
 class Rook < Piece
 	include StraightMover
-	def initialize(location, color)
-		super(location, color)
-		if color == "white"
-			@name = " wR "
-		else
-			@name = " bR "
-		end
 
+	def label
+		"R"
 	end
 
 	def can_move?(new_location)

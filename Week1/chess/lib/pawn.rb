@@ -7,12 +7,12 @@ class Pawn < Piece
 		@allowed_enemy_taking_move = []
 
 		super(location, color)
-		if color == "white"
-			@name = " wP "
-		else
-			@name = " bP "
-		end
 	end
+
+	def label
+		"P"
+	end
+
 	def enemy_nearby(location)
 		puts "adding a new allowed move #{location}"
 		@allowed_enemy_taking_move.push(location)

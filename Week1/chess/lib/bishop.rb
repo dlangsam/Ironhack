@@ -2,14 +2,9 @@ require_relative("piece.rb")
 
 class Bishop < Piece
 	include DiagonalMover
-	def initialize(location, color)
-		super(location, color)
-		if color == "white"
-			@name = " wB "
-		else
-			@name = " bB "
-		end
 
+	def label
+		"B"
 	end
 
 	def can_move?(new_location)

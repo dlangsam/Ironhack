@@ -1,13 +1,8 @@
 require_relative("piece.rb")
 
 class King < Piece
-	def initialize(location, color)
-		super(location, color)
-		if color == "white"
-			@name = " wK "
-		else
-			@name = " bK "
-		end
+	def label
+		"K"
 	end
 
 	def can_move?(new_location)
