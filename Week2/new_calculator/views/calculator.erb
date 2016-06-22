@@ -1,0 +1,26 @@
+<!-- views/calculator.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Calculator</title>
+</head>
+<body>
+  <form action = "/performed_calculation" method = "POST">
+<label for "first_number">First number: </label>
+  <input name = "first_number" type="number" placeholder="1st number">
+  <label for "second_number">Second number: </label>
+
+
+  <% if @memory_number.nil? %>
+  <input name = "second_number" type="number" placeholder="2nd number">
+  <% else %>
+  <input name = "second_number" type="number" placeholder="<%= @memory_number %>">
+  <% end %>
+	<button type="submit" name="operation" value="addition">ADD</button>
+	<button type="submit" name="operation" value="subtraction">SUBTRACT</button>
+	<button type="submit" name="operation" value="multiplication">MULTIPLY</button>
+	<button type="submit" name="operation" value="division">DIVIDE</button>
+  </form>
+
+</body>
+</html>

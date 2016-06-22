@@ -1,0 +1,8 @@
+<h1> Online Caculator </h1>
+<p>The result was <%=@result%></p>
+
+  <form action = "/save_to_memory" method = "POST">
+<input type = "hidden" name = "result" value = "<%= @result %>">
+	<button type="submit" name="operation" value="addition">Save this result for later</button>
+	
+  </form>
