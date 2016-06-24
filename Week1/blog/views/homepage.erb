@@ -1,0 +1,26 @@
+<html>
+
+
+<body>
+<h1>Welcome to the blog!</h1>
+<% @sorted_posts.each_with_index do |post, index| %>
+ <a href="/post_details/<%= index %>">
+<h2><%= post.title %> </h2></a>
+<div>
+by <em><%= post.author %> </em><br>
+<%= post.date.strftime("%B %e, %Y") %></div>
+<%end%>
+<%if @user == nil %>
+<form action="/log_in" method="POST">
+	<input type="text" id ="username" name="username" placeholder="username"> 
+	  
+	<input type="text" id="password" name="password" placeholder="password">
+	<button type="submit">Log in</button>
+<%else%>
+<form action = "/new_post" method = "POST">
+<button type="submit" >Add a new entry</button></form>
+<form action = "/log_out" method = "POST">
+<button type="submit" >Log out</button></form>
+<%end%>
+</body>
+</html>

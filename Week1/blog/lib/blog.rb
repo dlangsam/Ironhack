@@ -8,6 +8,12 @@ class Blog
 		@posts_per_page = 3
 		@num_pages = 1
 	end
+	def posts
+		@post_list
+	end
+	def latest_posts
+		sorted_posts = @post_list.sort{|post1, post2| post2.date <=> post1.date}
+	end
 	def add_post(post)
 		@post_list.push(post)
 	end
