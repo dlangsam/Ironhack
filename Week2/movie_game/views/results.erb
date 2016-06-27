@@ -1,0 +1,14 @@
+<html>
+<body align = center>
+	<%if @correct == true %>
+	Congratulations, you are right!
+	<%else%>
+	Wrong, the correct answer is <%=@correct_movie%>.
+	<%end%>
+	<form action = "/continue" method = "POST">
+		<button type = "submit" name = "continue" value = "yes">Keep playing!</button>
+		<button type = "submit" name = "continue" value = "no">I'm done. Show me my score.</button>
+	</form>
+
+</body>
+</html>

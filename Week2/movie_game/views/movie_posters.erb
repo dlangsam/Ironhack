@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>The Movie Game</title>
+</head>
+<body>
+<div align = "center">
+<!--<%@nine_movies.each do |movie|%>
+<%=movie.title%> - 
+<%=movie.id%> -
+<%=movie.year%> - 
+<%=movie.cast_members[0]%> - 
+<%=movie.tagline%> -
+<br>
+<%end%>-->
+<div>
+<% @nine_movies[0..2].each_with_index do |movie, index| %>
+<a href = "/movie_answer/<%=index%>">
+<img src = <%=movie.poster%> width = 100px height = 150px></a>
+<%end%>
+</div>
+<div>
+<% @nine_movies[3..5].each_with_index do |movie, index| %>
+<a href = "/movie_answer/<%=index + 3%>">
+<img src = <%=movie.poster %> width = 100px height = 150px></a>
+<%end%>
+</div>
+<div>
+<% @nine_movies[6..8].each_with_index do |movie, index| %>
+<a href = "/movie_answer/<%=index + 6%>">
+<img src = <%=movie.poster %> width = 100px height = 150px></a>
+<%end%>
+</div>
+<h2>
+<%if @type_of_question == "years" %>
+Question: Which movie came out in <%=@fact%>?
+<%elsif @type_of_question == "actors" %>
+Question: Which movie has <%=@fact%> as the leading actor?
+<%elsif @type_of_question == "taglines" %>
+Question: Which movie has this tagline: "<%=@fact%>"?
+<%end%>
+</h2>
+
+</div>
+
+</body>
+</html>
