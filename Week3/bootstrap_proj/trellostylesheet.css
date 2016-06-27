@@ -1,0 +1,104 @@
+body{
+	background-image: url("background.jpg");
+	background-size: cover;
+	font-size: 14px; 
+	font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+ .logo{
+	height: 30px;
+	width: 80px;
+	left: 40%;
+	position: relative;
+	/*position: absolute;*/
+}
+.subscribe{
+	position: relative;
+	background: #efe3c3;
+	height: 57px;
+	width: 100%;
+	margin: 5px 0 ;
+}
+.row, .heading, div{
+}
+.left-buttons {
+	top:5px;
+	color: #fff;
+	/*position: absolute;*/
+	left: 10px;
+}
+
+
+
+.right-buttons {
+	top:5px;
+	font-weight: 700;
+	margin-bottom: 3px;
+	float: right;
+
+}
+.green-btn{
+	background: linear-gradient(to bottom,#61bd4f 0,#5aac44 100%);
+	border: 0px;
+	color: #fff;
+
+}
+.blue-btn{
+	background: linear-gradient(to bottom,rgba(255,255,255,.3) 0,rgba(255,255,255,.2) 100%);
+	border: 0px;
+	color: #fff;
+}
+.clear-button{
+	background-color: transparent;
+	color: #fff;
+	border: 0px;
+}
+.menu{
+	background-color: #D3D3D3;
+	height: 100%;
+	bottom: -5px;
+}
+.menu-title{
+	text-align: center;
+	line-height: 20px;
+    margin: 13px 30px 9pt;
+}
+
+.face{
+	width: 40px;
+	height:40px;
+	float:left;
+	margin: 5px;
+}
+h3{
+	font-size:1pc;
+	display:block;
+		text-align: center;
+}
+hr{
+	background-color: #999;
+	border: 0;
+	color: #999;
+	height: 1px;
+	width: 100%;
+
+
+}
+.glyphicon{
+	color: #999;
+	margin:3px;
+}
+
+.actions{
+	color: #444;
+	line-height: 20px
+	padding: 6px 2px 6px 38px;
+}
+
+#blue_logo{
+	width:30px;
+	height:30px;
+}
+.agile-menu{
+	    color: #f6f6f6;
+}
+
