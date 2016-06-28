@@ -16,7 +16,7 @@ body{
 	background: #efe3c3;
 	height: 57px;
 	width: 100%;
-	margin: 5px 0 ;
+	/*margin: 5px 0 0 0;*/
 }
 .row, .heading, div{
 }
@@ -40,12 +40,14 @@ body{
 	background: linear-gradient(to bottom,#61bd4f 0,#5aac44 100%);
 	border: 0px;
 	color: #fff;
+	margin:2px;
 
 }
 .blue-btn{
 	background: linear-gradient(to bottom,rgba(255,255,255,.3) 0,rgba(255,255,255,.2) 100%);
 	border: 0px;
 	color: #fff;
+	margin:2px;
 }
 .clear-button{
 	background-color: transparent;
@@ -54,8 +56,10 @@ body{
 }
 .menu{
 	background-color: #D3D3D3;
-	height: 100%;
-	bottom: -5px;
+	height: 100vh;
+	overflow: scroll;
+	/*bottom: -5px;*/
+	/*border: 3px;*/
 }
 .menu-title{
 	text-align: center;
@@ -69,10 +73,16 @@ body{
 	float:left;
 	margin: 5px;
 }
+.small-face{
+	width: 20px;
+	height:20px;
+	margin: 5px;
+	padding: 2px;
+}
 h3{
 	font-size:1pc;
 	display:block;
-		text-align: center;
+	text-align: center;
 }
 hr{
 	background-color: #999;
@@ -80,12 +90,16 @@ hr{
 	color: #999;
 	height: 1px;
 	width: 100%;
-
-
 }
-.glyphicon{
+.action.glyphicon{
 	color: #999;
-	margin:3px;
+	margin: 5px;
+	padding: 2px;
+}
+.agile-menu, .glyphicon{
+ color: #f6f6f6;
+ margin: 5px;
+ font: 9pt;
 }
 
 .actions{
@@ -97,8 +111,43 @@ hr{
 #blue_logo{
 	width:30px;
 	height:30px;
+	margin:2px;
 }
 .agile-menu{
-	    color: #f6f6f6;
+	 color: #f6f6f6;
 }
 
+#agile-board{
+	font-size:18px;
+	padding-left: 2px;
+}
+.board{
+
+    background: #e2e4e6;
+  	 border-radius: 3px;
+  	 padding:10px;
+  	
+  	 margin: 2px;
+  	 width:100%;
+
+
+}
+.board-row{
+	color: #4d4d4d;
+	background-color: white;
+	border-radius: 3px;
+	padding:10px 2px;
+	margin:5px;
+	
+}
+.close-col{
+	padding:4px;
+}
+.date{
+	font-size: 10px;
+	color: #999;
+}
+a{
+	color:#444;
+	text-decoration: underline;
+}
