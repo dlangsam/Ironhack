@@ -1,11 +1,14 @@
 require 'imdb'
+
 require_relative('player.rb')
+require_relative('dictionary.rb')
 
 class MovieHandler
 	attr_reader :nine_movies
 	def initialize(player)
 		@player = player
 		@nine_movies = []
+		@dictionary = Dictionary.new("/usr/share/dict/words")
 	end
 	def search(search_word)
 		search_results=Imdb::Search.new(search_word)
@@ -45,20 +48,21 @@ class MovieHandler
 		i = 0
 		@nine_movies = []
 		while @nine_movies.length < 9
-			random_id = Random.new.rand * 2999999#10000000
-			puts random_id.floor.to_s.rjust(7, '0')
-			movie = Imdb::Movie.new(random_id.floor.to_s)
-			if movie.poster != nil && !movie.title.include?("TV") && !movie.title.include?("Video Game")
-				@nine_movies.push(movie)
-			end
-			if(@nine_movies.length == 9)
-				break 
+			search_word = @dictionary.get_short_word(9)
+			search_results=Imdb::Search.new(search_word)
+			movie_results = search_results.movies
+
+			i = 0
+			movie_found = false
+			movie_results.each do |movie|
+				
+				if movie.poster != nil && !movie.title.include?("TV") && !movie.title.include?("Video Game")
+					@nine_movies.push(movie)
+					break
+				end
 			end	
-			i += 1
 
-		end	
-
-
+		end
 	end
 	
 	def poster_urls
