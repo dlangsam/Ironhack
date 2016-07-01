@@ -44,6 +44,41 @@ button.heading{
 
 .background-photo{
 	background-image: url("background-photo.jpeg");
-	height: 500px;
+	height: 280px;
 	width: 100%;
+	background-size: cover;
+}
+
+.stats div{
+	text-align: center;
+	display: inline-block;
+	text-transform: uppercase;
+	padding:3px;
+	font-weight: 300;
+}
+
+.stats span{
+	color: #009999;
+	font-weight: 500;
+	font-size:18px;
+}
+.col-sm-4.stats{
+	padding:0;
+}
+div.follow{
+	
+}
+button.follow{
+	width: 99px;
+	position: relative;
+	left: 20%;
+	margin:10px;
+	font-weight: 800;
+	background-color: #f5f8fa;
+	border: 1px solid #e1e8ed;
+}
+
+.follow .glyphicon {
+	margin: 4px 10px 8px 0;
+	color: #1da1f2;
 }
