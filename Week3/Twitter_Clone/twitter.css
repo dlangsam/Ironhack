@@ -29,13 +29,21 @@ button.heading{
 	right: 30px;
 
 }
+
 .login a{
 	float: left;
 	margin: 8px 0;
 	color: #66757f;
 
 }
+
 .login span{
 	text-align: middle;
 	font-size:12px;
+}
+
+.background-photo{
+	background-image: url("background-photo.jpeg");
+	height: 500px;
+	width: 100%;
 }
