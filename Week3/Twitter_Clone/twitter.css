@@ -1,0 +1,41 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #66757f;
+	font-size: 13px;
+	font-weight: 500;
+}
+button.heading{
+	border-style: none;
+}
+#heading-btns{
+	text-align: right;
+}
+
+.search input{
+	float: right;
+	border-radius: 25px ;
+	/*vertical-align: bottom;*/
+	margin: 4px;
+	border-width: 1px;
+	width: 70%;
+	font-size:12px;
+	height: 32px;
+
+}
+
+.search .glyphicon {
+	position: absolute;
+	top: 12px;
+	right: 30px;
+
+}
+.login a{
+	float: left;
+	margin: 8px 0;
+	color: #66757f;
+
+}
+.login span{
+	text-align: middle;
+	font-size:12px;
+}
