@@ -87,7 +87,7 @@ div.follow{
 button.follow{
 	width: 99px;
 	position: relative;
-	left: 20%;
+	right: 5%;
 	margin:10px;
 	font-weight: 800;
 	background-color: #f5f8fa;
@@ -111,6 +111,7 @@ button.follow{
 	padding: 5px;
 	margin: 5px;
 	border: 1px solid #e1e8ed;
+	width: 80%;
 }
 .col-sm-8.feed{
 
@@ -119,6 +120,7 @@ div.content{
 	
 	padding: 5px;
 	margin: 5px;
+
 	
 }
 div.content span{
