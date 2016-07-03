@@ -5,29 +5,36 @@ body {
 	font-weight: 500;
 }
 button.heading{
+	padding: 5px 14px 0 4px;
 	border-style: none;
+	font-weight: 500;
+	color: #66757f;
 }
 #heading-btns{
 	text-align: right;
+	right: 40px;
+
 }
 
 .search input{
 	float: right;
-	border-radius: 25px ;
+	border-radius: 21px ;
 	/*vertical-align: bottom;*/
 	margin: 4px;
-	border-width: 1px;
-	width: 70%;
+	border: 1px solid #e1e8ed;
+	width: 50%;
 	font-size:12px;
 	height: 32px;
-
+	background-color: #f5f8fa;
+	padding: 5px 27px 6px 12px;
+	font-weight: 400;
 }
+
 
 .search .glyphicon {
 	position: absolute;
 	top: 12px;
 	right: 30px;
-
 }
 
 .login a{
@@ -40,6 +47,7 @@ button.heading{
 .login span{
 	text-align: middle;
 	font-size:12px;
+	font-weight: 400;
 }
 
 .background-photo{
@@ -53,14 +61,22 @@ button.heading{
 	text-align: center;
 	display: inline-block;
 	text-transform: uppercase;
-	padding:3px;
+	padding: 10px 3px 0 ;
 	font-weight: 300;
+	vertical-align: bottom;
+}
+.profile-details{
+	width: 300px;
+	float: left;
 }
 
 .stats span{
 	color: #009999;
 	font-weight: 500;
 	font-size:18px;
+}
+.row.stats{
+	border: 1px solid #e1e8ed;
 }
 .col-sm-4.stats{
 	padding:0;
@@ -81,4 +97,51 @@ button.follow{
 .follow .glyphicon {
 	margin: 4px 10px 8px 0;
 	color: #1da1f2;
+}
+
+.main{
+	background-color: #f5f8fa;
+	height: 100vh;
+}
+.feed{
+	
+	border-width: 1px;
+	border-radius: 5px;
+	background-color: white;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #e1e8ed;
+}
+.col-sm-8.feed{
+
+}
+div.content{
+	
+	padding: 5px;
+	margin: 5px;
+	
+}
+div.content span{
+	font-size: 18px;
+	color: #009999;
+	padding: 15px 15px 12px;
+	font-weight: 300;
+}
+.profile-info{
+	position:absolute;
+	top:-150px;
+	left: 35%;
+}
+
+#logo{
+    border-radius: 8px;
+    background-color: #fff;
+	
+}
+
+#logo img {
+	border-radius: 8px;
+	margin: 6px;
+
+
 }
