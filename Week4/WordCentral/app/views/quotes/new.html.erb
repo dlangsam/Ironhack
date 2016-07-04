@@ -1,0 +1,11 @@
+<form action="/quotes" method="post">
+  <label for="quotes_number">Number of words/paragraphs</label>
+    <input type="number" name="quotes[user_number]" id="quotes_user_number"></textarea>
+  </div>
+  <br>
+    <input type="radio" name="quotes[type]" value="words" checked> Words<br>
+  <input type="radio" name="quotes[type]"  value="paragraphs"> Paragraphs<br>
+   <button type="submit">Submit</button>
+  <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+</form>

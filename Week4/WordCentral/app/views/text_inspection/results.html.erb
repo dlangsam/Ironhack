@@ -1,0 +1,17 @@
+<h2>
+	<%= @text %>
+</h2>
+<h3>
+ 	<%= @word_count %> words
+ 	<br>
+ 	This should take approx. <%= @minutes %> minutes to read.
+
+</h3>
+<h4> 
+	Top ten words:
+	<% @top_words.each do |word| %>
+		<li><%= word %> </li>
+	<%end %>
+</h4>
+
+<%= link_to 'Home', "/" %>
