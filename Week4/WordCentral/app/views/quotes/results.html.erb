@@ -1,4 +1,10 @@
 <p>
-<%= @random_words %></p>
+<% @result_array.each do |line| %>
+<%=line%>
+</p>
+<p>
+<%end%>
+	
+</p>
 <br>
 <%= link_to 'Home', "/" %>

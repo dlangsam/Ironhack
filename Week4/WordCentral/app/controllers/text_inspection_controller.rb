@@ -15,6 +15,7 @@ class TextInspectionController < ApplicationController
   	#this should eventually be part of a model
 
   	def count_word_freq(string)
+      string = string.downcase.gsub(/[^a-z0-9\s]/i, '')
   		words = string.split(/\s|\W/)
   		freq_map = Hash.new
   		words.each do |word|
