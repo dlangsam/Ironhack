@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   get '/contact', to: 'site#contact'
 
+  get '/projects', to: 'projects#index'
+
 end
