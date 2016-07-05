@@ -46,24 +46,28 @@ class QuotesController < ApplicationController
 		number_of_words = words.length
 	
 		i = 0
-		paragraph_length = (60 * Random.new.rand).to_i + 5
+		paragraph_length = 10+ (60 * Random.new.rand).to_i
 		if @type == "paragraphs"
-			@number = @number.to_i * 60
+			total_words = @number.to_i * 60
+		else
+			total_words = @number.to_i
 		end
 		@result_array = []
 		random_words = ""
-		while(i < @number.to_i)
+		words_in_paragraph = 0
+		while(i < total_words)
 
-			index = number_of_words * Random.new.rand 
+			index = (number_of_words * Random.new.rand).to_i 
 	
 			random_words = "#{random_words} #{words[index]}"
 			
-			i = i + 1
-			puts paragraph_length
-			if i%paragraph_length == 0 && @type == "paragraphs"
+			i = i + 1 
+			words_in_paragraph = words_in_paragraph + 1
+			if words_in_paragraph%paragraph_length == 0 && @type == "paragraphs" && @result_array.length + 1 < @number.to_i
 				@result_array.push(random_words)
-				paragraph_length =(60 * Random.new.rand).to_i + 5
+				paragraph_length = 10 + (60 * Random.new.rand).to_i
 				random_words = ""
+				words_in_paragraph = 0
 			end
 		end
 		@result_array.push(random_words)

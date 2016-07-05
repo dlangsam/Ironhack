@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-	 get '/', to: 'site#home'
+	 get '/', to: 'site#home', as: :home
 	 get '/text_inspections/new', to: 'text_inspection#new'
 	 post '/text_inspections', to: 'text_inspection#create'
 	 get '/asciis/new', to: 'asciis#new'
