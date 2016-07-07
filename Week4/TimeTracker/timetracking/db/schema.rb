@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160706160939) do
+ActiveRecord::Schema.define(version: 20160706193433) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "name"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20160706160939) do
     t.integer  "hours"
     t.integer  "minutes"
     t.text     "comments"
-    t.date     "datetime"
+    t.datetime "date"
   end
 
 end

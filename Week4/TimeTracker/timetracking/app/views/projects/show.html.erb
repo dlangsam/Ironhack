@@ -1,3 +1,5 @@
 <h1><%= @my_project.name %></h1>
-<%= @my_project.description %>
-<a href = "/projects"> Back to all projects </a>
+<p><%= @my_project.description %><p>
+<%= link_to "View logged time", "/projects/#{@my_project.id}/time_entries" %>
+<br>
+<%= link_to "Back to all projects", projects_path %>

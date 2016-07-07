@@ -19,10 +19,10 @@ projectI = Project.create(name: "Tie Dye", description: "Transform a boring whit
 projectJ = Project.create(name: "Ceramics")
 projectK = Project.create(name: "Lanyard", description: "Tie knots in lanyard to make a keychain")
 
-TimeEntry.create(project_id: projectI.id, hours: 1, minutes: 30, comments: "Made a cool t-shirt", datetime: Time.now )
-TimeEntry.create(project_id: projectH.id, hours: 4, minutes: 20, comments: "Built a shelf", datetime: Time.now )
-TimeEntry.create(project_id: projectK.id, hours: 0, minutes: 30, comments: "Learned box stitch", datetime: Time.now )
-TimeEntry.create(project_id: projectH.id, hours: 1, minutes: 30, comments: "Painted the shelf purple", datetime: Time.now )
-TimeEntry.create(project_id: projectF.id, hours: 2, minutes: 0, comments: "Learned to stand up on water skis", datetime: Time.now )
+TimeEntry.create(project_id: projectI.id, hours: 1, minutes: 30, comments: "Made a cool t-shirt", date: Time.now )
+TimeEntry.create(project_id: projectH.id, hours: 4, minutes: 20, comments: "Built a shelf", date: Time.now )
+TimeEntry.create(project_id: projectK.id, hours: 0, minutes: 30, comments: "Learned box stitch", date: Time.now )
+TimeEntry.create(project_id: projectH.id, hours: 1, minutes: 30, comments: "Painted the shelf purple", date: Time.now )
+TimeEntry.create(project_id: projectF.id, hours: 2, minutes: 0, comments: "Learned to stand up on water skis", date: Time.now )
 
 puts("done")
