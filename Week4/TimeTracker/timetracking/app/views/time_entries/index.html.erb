@@ -10,7 +10,9 @@
 	<br>
 	<a href = "/projects/<%= @my_project.id %>/time_entries/<%=entry.id%>/edit">
 	Edit
-	</a>
+	</a><br>
+	<%= link_to 'Delete', project_time_entry_path(@my_project, entry), method: :delete, data: {confirm: 'Are you sure?'} %>
+
 <% end %>
 </ul>
 

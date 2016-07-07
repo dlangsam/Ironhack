@@ -19,5 +19,6 @@
 	<%= f.label :comments %>
 	<%= f.text_area :comments, size: 4 %>
 	<br>
-	<%= f.button "Save" %>
+	<%= f.button "Save" %><br>
+	<%= link_to 'Cancel', project_time_entries_path(@my_project) %>
 <% end %>
