@@ -1,20 +1,3 @@
-<% if @my_entry.errors.any? %>
-<ul>
-<% @my_entry.errors.full_messages.each do |error_msg| %>
-<li> <%= error_msg %></li>
-<%end %>
-</ul>
-<% end %>
+<h2> New time entry for <%= @my_project.name %> </h2>
 
-<%= form_for [@my_project, @my_entry] do |f| %>
-	<%= f.label :hours %>
-	<%= f.text_field :hours %>
-	<br>
-	<%= f.label :minutes %>
-	<%= f.text_field :minutes %>
-	<br>
-	<%= f.label :date %>
-	<%= f.date_field :date %>
-	<br>
-	<%= f.button "Save" %>
-<% end %>
+<%= render "partials/form"%>

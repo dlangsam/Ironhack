@@ -6,6 +6,11 @@
 	<%= entry.minutes %> minutes
 	 on <%= entry.date.to_date %>
 	</li>
+	<%= entry.comments %>
+	<br>
+	<a href = "/projects/<%= @my_project.id %>/time_entries/<%=entry.id%>/edit">
+	Edit
+	</a>
 <% end %>
 </ul>
 
