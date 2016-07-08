@@ -1,0 +1,15 @@
+<h2> List of products for sale </h2>
+<ul>
+	<% @products_array.each do |the_product| %>
+		<li><a href = "/users/<%=@user.id%>/products/<%= the_product.id %>"><%= the_product.title %></a></li>
+		<%=the_product.description %>
+		
+	<%end%>
+
+
+
+
+</ul>
+<br>
+<%= link_to "Add an auction item", "/users/#{@user.id}/products/new"%><br>
+<%= link_to "Back to user", "/users/#{@user.id}/"%><br>

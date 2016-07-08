@@ -1,0 +1,16 @@
+<h2> <%= @product.title %></h2>
+<p>
+<%= @product.description %>
+<h3>Bids</h3>
+<% @product.bids.each do |bid| %>
+<li> <%= bid.amount %> </li>
+<% end %>
+</p>
+
+<%= link_to "Place a bid", "/users/#{@user.id}/products/#{@product.id}/bids/new" %>
+<p>
+Auction ends at <%= @product.deadline %>
+<p>
+
+<%= link_to "Products", user_path(@user)%>
+
