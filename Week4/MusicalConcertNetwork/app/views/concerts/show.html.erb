@@ -1,0 +1,8 @@
+
+<h1> <%= @concert.artist %> <h1>
+<h2> <%= @concert.date.to_date %> </h2>
+at <%= @concert.venue %>, <%= @concert.city %>
+<br>
+<%= @concert.price %>
+<p> <%= @concert.description %></p>
+<%= link_to "Back to all concerts", concerts_path %>
