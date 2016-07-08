@@ -1,8 +1,36 @@
 
-<h1> <%= @concert.artist %> <h1>
-<h2> <%= @concert.date.to_date %> </h2>
-at <%= @concert.venue %>, <%= @concert.city %>
+<div class = "concert-heading">
+<h1> <%= @concert.artist %> </h1>
+<h2> <%= @concert.date.to_date.strftime("%B %d, %Y") %> </h2>
+</div>
+<div class = "concert-description">
+<%= @concert.venue %>, <%= @concert.city %>
 <br>
-<%= @concert.price %>
+Cost: <span class ="cost"><%= sprintf('%.2f', @concert.price) %></span>
 <p> <%= @concert.description %></p>
+</div>
+
+
+<div class = "comments">
+<%= form_for [@concert, @comment] do |f| %>
+	<%= f.label :name, class: "label"%>
+	<%= f.text_field :name, class: "input", id: "name_input"%>
+	<br>
+	<%= f.label :comment, class: "label" %>
+	<%= f.text_area :comment, class: "input", id: "comment_input" %>
+	<br>
+	<%= f.button class: "form-button" %>
+<%end%>
+
+
+<% @concert.comments.all.each do |comment| %>
+
+	<%= comment.name %> says:
+	<div class = "user_comment">
+	<%= comment.comment %>
+	</div>
+
+<%end%>
+
+</div>
 <%= link_to "Back to all concerts", concerts_path %>

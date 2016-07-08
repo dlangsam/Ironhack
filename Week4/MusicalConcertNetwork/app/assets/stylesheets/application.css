@@ -16,14 +16,22 @@
 
 
 #header{
-	height: 80px;
+	height: 100px;
 	text-align: center;
-	margin: 5px;
+	padding: 5px;
+	background-color: #0e98b2;
 
 }
 #footer{
+	width: 100%;
 	text-align: center;
 	height: 30px;
     position: absolute;
     bottom: 0;
+    background-color: #0e98b2;
+}
+html, body{
+	 background-color: #fef375;
+
+
 }

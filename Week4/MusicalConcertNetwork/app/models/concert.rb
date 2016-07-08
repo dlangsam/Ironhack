@@ -6,5 +6,8 @@ class Concert < ApplicationRecord
 	validates :date, presence: true
 	validates :price, presence: true
 	validates :description, presence: true
+
+	validates_associated :comments
+	has_many :comments
 	
 end
