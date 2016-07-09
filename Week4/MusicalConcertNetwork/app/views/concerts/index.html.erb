@@ -8,7 +8,12 @@
 <%end%>
 <%= link_to "Add upcoming concert", "concerts/new" %>
 </div>
-
+<div class = "side-bar">
+<form action = "/search" >
+<label for "price">Price: </label>
+<input name = "price" type = "number" ></input>
+<button type = "submit" class = "special-button">Go!</button>
+</form>
 <div class = "next_month">
 <h3> Upcoming Concerts </h3>
 <% @future_concerts.each do |concert| %>
@@ -16,6 +21,7 @@
 <%= link_to "#{concert.artist}", "/concerts/#{concert.id}" %> at <%= concert.venue %>
 </div>
 <%end%>
+</div>
 </div>
 
 

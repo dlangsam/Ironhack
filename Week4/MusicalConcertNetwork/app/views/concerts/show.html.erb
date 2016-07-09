@@ -19,7 +19,7 @@ Cost: <span class ="cost"><%= sprintf('%.2f', @concert.price) %></span>
 	<%= f.label :comment, class: "label" %>
 	<%= f.text_area :comment, class: "input", id: "comment_input" %>
 	<br>
-	<%= f.button class: "form-button" %>
+	<%= f.button id: "form-button", class: "special-button" %>
 <%end%>
 
 

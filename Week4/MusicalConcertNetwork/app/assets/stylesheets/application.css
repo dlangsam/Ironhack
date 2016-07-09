@@ -16,10 +16,12 @@
 
 
 #header{
-	height: 100px;
+	height: 200px;
 	text-align: center;
 	padding: 5px;
-	background-color: #0e98b2;
+	background-image: url("concert-long.jpg");
+	width: 100%;
+	background-size: cover;
 
 }
 #footer{
@@ -28,10 +30,19 @@
 	height: 30px;
     position: absolute;
     bottom: 0;
-    background-color: #0e98b2;
+    background-color: #e18def; /#2f76ca;*/
 }
 html, body{
-	 background-color: #fef375;
+	 background-color: #2f76ca; /*#0FABD2*/
+	
 
+}
 
+a:link {
+    color: #e18def;
+}
+
+/* visited link */
+a:visited {
+    color: #e18def;
 }

@@ -6,12 +6,15 @@ div.today{
 	float: left;
 	width: 60%;
 	margin: 20px;
+	overflow: scroll;
+	height: 500px;
 }
-div.next_month{
+div.side-bar{
 	display: inline-block;
 	float: right;
 	width: 30%;
 }
+
 .concert-heading{
 	text-align: center;
 }
@@ -24,7 +27,7 @@ div.next_month{
 div.comments{
 	padding: 5px;
 	width: 100%;
-	background-color: #fef375;
+	/*background-color: #fef375;*/
 	overflow: scroll;
 	height: 200px;
 }
@@ -51,11 +54,14 @@ div.comments{
 	border: solid 3px;
 	background-color: white; 
 }
-.form-button{
-	position: relative;
+.special-button{
 	background-color: black;
-	color:  #0e98b2;
-	left: 100px;
+	color:  #e18def;
 	border: 0px;
 	border-radius: 5px;
+}
+#form-button{
+	position: relative;
+	left: 100px;
+	
 }
