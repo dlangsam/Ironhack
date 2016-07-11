@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 	  get '/', to: 'concerts#index'
-	  get '/search', to: 'search#search'
+	  get '/price', to: 'search#price'
+	  get '/popularity', to: 'search#popularity'
 	resources :concerts do
 		resources :comments
 	end

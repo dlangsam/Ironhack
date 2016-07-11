@@ -13,7 +13,12 @@
  *= require_tree .
  *= require_self
  */
+#main{
+	
+	overflow: scroll;
+	height: 100vh;
 
+}
 
 #header{
 	height: 200px;
@@ -22,19 +27,24 @@
 	background-image: url("concert-long.jpg");
 	width: 100%;
 	background-size: cover;
+	color: black;
 
 }
 #footer{
 	width: 100%;
 	text-align: center;
-	height: 30px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    background-color: #e18def; /#2f76ca;*/
+    color: black; /*#e18def;*/ 
+    background-color: #2f76ca;
+}
+#footer span{
+	color: #e18def;
+
 }
 html, body{
-	 background-color: #2f76ca; /*#0FABD2*/
-	
+	 color: #2f76ca; /*#0FABD2*/
+	background-color: black;	
 
 }
 
@@ -45,4 +55,10 @@ a:link {
 /* visited link */
 a:visited {
     color: #e18def;
+}
+
+.popular_search form button{
+
+	margin: 5px;
+	width:65%;
 }

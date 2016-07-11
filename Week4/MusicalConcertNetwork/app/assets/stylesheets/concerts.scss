@@ -6,8 +6,8 @@ div.today{
 	float: left;
 	width: 60%;
 	margin: 20px;
-	overflow: scroll;
-	height: 500px;
+	/*overflow: scroll;
+	height: 500px;*/
 }
 div.side-bar{
 	display: inline-block;
@@ -34,7 +34,7 @@ div.comments{
 .new_comment .label{
 	width: 50px;
 	text-align: center;
-	color: black;
+	color:  #2f76ca;
 	vertical-align: top;
 
 
@@ -45,6 +45,7 @@ div.comments{
 	width:80%;
 	border: solid 3px;
 	margin: 5px;
+	background-color: #dcf9ea;
 
 }
 #name_input{
@@ -53,15 +54,34 @@ div.comments{
 .user_comment{
 	border: solid 3px;
 	background-color: white; 
+	background-color: #dcf9ea;
 }
 .special-button{
-	background-color: black;
+	background-color: #2f76ca;
 	color:  #e18def;
-	border: 0px;
+	border: 1px #e18def solid;
 	border-radius: 5px;
+}
+#new-concert .buttons{
+	position: relative;
+	top: 20px;
 }
 #form-button{
 	position: relative;
 	left: 100px;
 	
+}
+
+#new-concert .field, #concert_city{
+	position: absolute;
+	left: 90px;
+	width: 300px;
+}
+
+#new-concert div{
+	margin: 5px;
+}
+
+#concert_date{
+	line-height:22px;
 }

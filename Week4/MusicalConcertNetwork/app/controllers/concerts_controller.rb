@@ -1,7 +1,8 @@
 class ConcertsController < ApplicationController
 	def index
 		@concerts = Concert.where("date = ?", Date.today.to_datetime)
-		@future_concerts = Concert.where("date > ?", Date.today.to_datetime).where("date < ?", Date.today.to_datetime + 1.month)
+		@future_concerts = Concert.where("date > ?", Date.today.to_datetime).where(
+			"date < ?", Date.today.to_datetime + 1.month).order("date")
 		render 'index'
 	end
 	def show
@@ -11,6 +12,7 @@ class ConcertsController < ApplicationController
 	end
 	def new
 		@concert = Concert.new
+		@cities = Concert.uniq.pluck(:city)
 		render 'new'
 	end
 	def create

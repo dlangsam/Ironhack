@@ -1,0 +1,26 @@
+<div class = "side-bar">
+
+	<div>
+	<form action = "/price" >
+		<label for "price">Price: </label>
+		<input name = "price" type = "number" ></input>
+		<button type = "submit" class = "special-button">Go!</button>
+	</form>
+	</div>
+	<div class = "popular_search">
+	<form action = "/popularity" >
+		
+		<button type = "submit" class = "special-button">Top Concerts</button>
+	</form>
+
+	</div>
+	
+	<div class = "next_month">
+		<h3> Upcoming Concerts </h3>
+			<% @future_concerts.each do |concert| %>
+			<div>
+			<%= link_to "#{concert.artist}", "/concerts/#{concert.id}" %> at <%= concert.venue %>
+			</div>
+		<%end%>
+	</div>
+</div>

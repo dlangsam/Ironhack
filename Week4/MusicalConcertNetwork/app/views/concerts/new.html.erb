@@ -1,23 +1,33 @@
-
+<div id = "new-concert">
 <h3>Add a concert</h3>
 <%= form_for @concert do |f| %>
+<div class = "artist">
 	<%= f.label :artist %>
-	<%= f.text_field :artist%>
-	<br>
+	<%= f.text_field :artist, class: "field" %>
+</div>
+<div class = "venue">
 	<%= f.label :venue %>
-	<%= f.text_field :venue%>
-	<br>
+	<%= f.text_field :venue, class: "field"%>
+</div>
+<div class = "city">
 	<%= f.label :city %>
-	<%= f.text_field :city%>
-	<br>
+	 <%= f.select :city, @cities %>
+</div>
+<div class = "date">
 	<%= f.label :date %>
-	<%= f.date_field :date%>
-	<br>
+	<%= f.date_field :date, class: "field"%>
+</div>
+<div class = "price">
 	<%= f.label :price %>
-	<%= f.number_field :price, step: "any" %>
-	<br>
+	<%= f.number_field :price, step: "any",  class: "field" %>
+</div>
+<div class = "descriptions">
 	<%= f.label :description %>
-	<%= f.text_area :description %>
-	<br>
-	<%= f.button class: "special-button" %><%=link_to 'Cancel', concerts_path %>
+	<%= f.text_area :description, class: "field"%>
+</div>
+<div class = "buttons">
+	<%= f.button class: "special-button" %>
+	<%=link_to 'Cancel', concerts_path%>
+</div>
 <% end %>
+</div>
