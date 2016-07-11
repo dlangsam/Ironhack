@@ -1,4 +1,4 @@
-function printEpisode(episode){
+}function printEpisode(episode){
 	 console.log("Title: " + episode.title + " Episode #: " + episode.episode_number +"\n"
  	+ episode.description + "\n" + "Rating " + episode.rating + getStar(episode));
 }

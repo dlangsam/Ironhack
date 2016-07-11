@@ -1,0 +1,13 @@
+#header_image{
+	background-image: url('images/little_penguin.gif');
+	background-repeat: no-repeat;
+	height: 500px;
+		
+}
+
+
+@media screen and (min-width: 1200px){
+	#header_image{
+		background-image: url('images/penguin_line.gif');
+	}
+}

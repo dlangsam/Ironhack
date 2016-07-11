@@ -1,0 +1,11 @@
+<link rel = "stylesheet" href = "/styles.css"
+
+<html>
+
+<h1> My recipe for <%= @name %> </h1>
+<h2> Ingredients </h2>
+<ol class = "ingredients">
+<% @ingredients.each do |the_ingredient| %>
+<li><%= the_ingredient %></li>
+<% end %></ol>
+</html>

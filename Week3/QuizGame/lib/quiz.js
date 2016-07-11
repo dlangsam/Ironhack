@@ -2,6 +2,7 @@
 
 var read = require('read');
 var Questions = require("./questions.js");
+var User = require("./user.js");
 
 class Quiz{
 	constructor(questions){
@@ -9,6 +10,12 @@ class Quiz{
 		this.i = 0;
 		this.current_question;
 		this.score = 0;
+		this.bonusQuestion = Math.floor(Math.random()*this.questions.length);
+		this.user = null; 
+	}
+
+	addUser(user){
+		this.user = null;
 	}
 
 
@@ -22,9 +29,15 @@ class Quiz{
  	answeredRight(err, answer){
 
 		if (this.current_question.answer === answer){
-			this.i++;
-			if (!this.current_question.answeredOnce)
+		
+		    if (!this.current_question.answeredOnce){
 				this.score += this.current_question.points;
+				if(this.i === this.bonusQuestion){
+					console.log("Congratulations, you answered the bonus question correct!");
+					this.score += this.current_question.points;
+				}
+		    }
+			this.i++;
 
 		}else{
 			if (!this.current_question.answeredOnce)

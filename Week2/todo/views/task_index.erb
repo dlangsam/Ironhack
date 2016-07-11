@@ -1,0 +1,30 @@
+<html>
+
+<h1> Welcome to the to do list. </h1>
+<h2> Tasks </h2>
+<ol class = "taks">
+<% @tasks.each do |task| %>
+<li><%if task.complete? %><del> <%= task.content %></del><%else%> <%= task.content %> <%end%>
+
+<%if !task.complete? %>
+<form action = "/make_complete" method = "POST">
+<button type="submit" name="id" value = <%=task.id%> > Mark as complete</button>
+</form>
+<%else%>
+<form action = "/delete_task" method = "POST">
+<button type="submit" name="id" value = <%=task.id%> >Delete</button>
+</form>
+
+<% end %>
+	
+
+
+</li>
+<% end %></ol>
+
+
+
+<form action = "/new_task" method = "POST">
+<button type="submit" >Add new task</button>
+</form>
+</html>

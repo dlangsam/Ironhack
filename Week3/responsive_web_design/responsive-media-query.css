@@ -1,0 +1,26 @@
+body:after{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	font-weight: bold;
+	font-style: 100%;
+	color: #fff;
+	background-color: #aaa;
+	content: "Small screens(786px and below)";
+}
+
+
+@media screen and (min-width: 786px){
+	body:after{
+		background-color: #888;
+		content: "Medium screens(786px to 1200px)";
+	}
+}
+
+@media screen and (min-width: 1200px){
+	body:after{
+		background-color: #000;
+		content: "Large screens(1200px and above)";
+	}
+}

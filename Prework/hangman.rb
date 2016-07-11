@@ -2,9 +2,14 @@
 
 class Player
 	attr_reader :name 
-	def initialize(playerNum)
-		puts ("What is your name?")
-  		@name= gets.chomp
+	def initialize(playerNum, playerName = nil)
+		puts "created a player"
+		if(playerName === nil)
+			puts ("What is your name?")
+  			@name= gets.chomp
+  		else
+  			@name = playerName
+  		end
   		@playerNumber = playerNum
   		puts ("Hello #{@name}. You are player #{@playerNumber}.")
 	end
@@ -19,6 +24,9 @@ class Player
 			begin 
 				puts("Pick a letter to guess")
 				letter = gets.chomp
+				if(letter == "save")
+					return "save"
+				end
 			end while letter.length != 1
 			return letter
 		end
@@ -56,6 +64,7 @@ class Game
 		@wrongGuesses = 0
 		@word = ""
 		@guessedWord = []
+		@keepPlaying = true
 	
 
 	end
@@ -67,6 +76,7 @@ class Game
 	end
 	
 	def guessLetter(letter)
+	
 		if @word.include? letter
 			i = 0
 			while i != nil do
@@ -86,19 +96,24 @@ class Game
 		end
 	end
  
-	
+	def beginGuesses()
+		begin
+			guessLetter( @player2.guessLetter())
+			if !(@guessedWord.include?("_"))
+				puts "Congratulations #{@player2.name}, you won!"
+				return
+			end
+		end while(@wrongGuesses < @allowedGuesses && @keepPlaying === true)
+		if(@wrongGuesses >= @allowedGuesses)
+			puts "Sorry, you lost. The word was #{@word}. Better luck next time!"
+		end
+	end
+
 	def playGame()
 		
 		@word = @player1.pickWord()
 		createGuessedWordArray(@word)
-		begin
-		guessLetter( @player2.guessLetter())
-		if !(@guessedWord.include?("_"))
-			puts "Congratulations, you won!"
-			return
-		end
-		end while(@wrongGuesses < @allowedGuesses)
-		puts "Sorry, you lost. The word was #{@word}. Better luck next time!"
+		beginGuesses()
 		
 	end
 
@@ -129,7 +144,60 @@ class Dictionary
 
 end
 
+class SavedGame < Game
+	def initialize(file)
+		@file_name = file
+		@isSaved = false
+		puts ("Load saved game y/n?")
+		ans = gets.chomp
+		if ans === "y"
+			readGame()
+			@isSaved = true
+		else
+			super()
+		end
+	end
+	def playGame()
+		
+		if @isSaved
+			beginGuesses()
+		else
+			super()
+		end
+	end
+	def guessLetter(letter)
+
+		if letter == "save"
+			saveGame()
+			@keepPlaying = false
+		else
+			super(letter)
+		end
+	end
+	def saveGame()
+		wordWithBlanks = ""
+		for i in 0...@guessedWord.length
+			puts "#{@guessedWord[i]}"
+			wordWithBlanks = "#{wordWithBlanks}#{@guessedWord[i]}"
+		end
+		gameString = "#{@player1.name},#{@player2.name},#{@word},#{@wrongGuesses},#{wordWithBlanks}"
+		IO.write(@file_name, gameString)
+	end
+	def readGame()
+		gameArray = IO.read(@file_name).split(",")
+		puts gameArray
+		@player1 = Player.new(1, gameArray[0]) 
+		@player2 = Player.new(2, gameArray[1]) 
+		@word = gameArray[2]
+		@wrongGuesses = gameArray[3].to_i
+		@guessedWord = gameArray[4].split("")
+		@allowedGuesses = 6
+		@keepPlaying = true
+		
+	end
+end
 
 
-game = Game.new
+
+game = SavedGame.new("game.txt")
 game.playGame()

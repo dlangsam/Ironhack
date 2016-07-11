@@ -37,8 +37,9 @@ class ShakeShop
 		 @milkshake_menu.push(milkshake)
 	end
 	def showCompleteMenu
-		@milkshake_menu.each do |milkshake|
-			puts "#{milkshake.flavor} : #{milkshake.price_of_milkshake}"
+		@milkshake_menu.each do |milksake|
+      puts "hi"
+			 puts "#{milkshake.flavor} : #{milkshake.price_of_milkshake}"
 		end
 
 	end
