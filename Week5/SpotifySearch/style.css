@@ -1,0 +1,20 @@
+.artist-search{
+	text-align: center;
+}
+.artist-photo{
+	margin: 2px;
+	display: inline-block;
+	align: left
+}
+
+#list{
+	f;oat: right;
+	width: 60%;
+	display: inline-block;
+}
+
+button{
+	border-width: 0px;
+	color: clear;
+	margin: 1px;
+}
