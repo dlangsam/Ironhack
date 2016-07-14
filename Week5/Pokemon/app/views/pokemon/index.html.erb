@@ -1,0 +1,96 @@
+<h1>Pokédex</h1>
+
+<!-- List of pokemon -->
+<ul class="pokedex-list">
+  <% @pokemon.each do |pkmn| %>
+    <li>
+      <button class="js-show-pokemon btn btn-link"
+          data-pokemon-uri="<%= pkmn["resource_uri"] %>">
+        <%= pkmn["name"] %>
+      </button>
+    </li>
+  <% end %>
+</ul>
+
+
+<!-- Pokemon modal view (hidden at first) -->
+<div class="modal fade js-pokemon-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+
+        <h3 class="modal-title">
+          <span class="js-pkmn-name">Feraligtr</span>
+          <small class= "js-pkmn-number">#160</small>
+          <div>
+          <div class = "js-pkmn-image"> </div>
+          <div class = "js-pkmn-desc"></div>
+          </div>
+        </h3>
+      </div><!-- .modal-header -->
+
+      <div class="modal-body">
+ 
+        <dl class="dl-horizontal">
+      
+         
+          <dt>Hit points</dt>
+          <dd class = "js-pkmn-hitpts"></dd>
+          <dt>Height</dt>
+          <dd class = "js-pkmn-ht">23</dd>
+
+          <dt>Weight</dt>
+          <dd class = "js-pkmn-wt">888</dd>
+          <dt>Attack</dt>
+          <dd class = "js-pkmn-attack"></dd>
+          <dt>Defence</dt>
+          <dd class = "js-pkmn-defense"></dd>
+          <dt>Special Attack</dt>
+          <dd class = "js-pkmn-sp-attack"></dd>
+          <dt>Special Defence</dt>
+          <dd class = "js-pkmn-sp-defense"></dd>
+          <dt>Speed</dt>
+          <dd class = "js-pkmn-speed"></dd>
+          <dt>Type</dt>
+          <dd class = "js-pkmn-types"></dd>
+        </dl>
+        <button class = "js-evolutions">Evolutions</button>
+      </div><!-- .modal-body -->
+
+    </div><!-- .modal-content -->
+  </div><!-- .modal-dialog -->
+</div><!-- .modal -->
+
+
+
+<!-- Pokemon modal view (hidden at first) -->
+<div class="modal fade js-evolution-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+
+        <h3 class="modal-title">
+        </h3>
+      </div><!-- .modal-header -->
+
+      <div class="modal-body">
+ 
+        <dl class="dl-horizontal js-evolution-table">
+      
+         
+
+        </dl>
+       
+      </div><!-- .modal-body -->
+
+    </div><!-- .modal-content -->
+  </div><!-- .modal-dialog -->
+</div><!-- .modal -->
