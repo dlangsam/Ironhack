@@ -4,17 +4,26 @@
 .artist-photo{
 	margin: 2px;
 	display: inline-block;
-	align: left
+	float: right;
+	
 }
 
 #list{
-	f;oat: right;
-	width: 60%;
 	display: inline-block;
+	position: relative;
+
 }
 
 button{
 	border-width: 0px;
-	color: clear;
-	margin: 1px;
+	background-color: white;
+	margin: 2px;
+	color: #0baad2;
+}
+.artist-result{
+	background-color: white;
+	margin: 5px;
+	color:  #4cbc57;
+    width: 100%;
+
 }

@@ -86,14 +86,16 @@ function showTracks(response){
     }
 
     function showArtist(response){
+       $('.results').empty();
+    
       var searchResults = response;
    		 var html = "";
       searchResults.artists.items.forEach(function (result){
-        html += `<li><button class = "artist-result" data-id = ${result.id}> Name: ${result.name}</button>`;  
+        html += `<div><button class = "artist-result" data-id = ${result.id}> Name: ${result.name}</button>`;  
         if(result.images.length > 0){
-        	html += `<br><div class = "artist-photo"><img src = ${result.images[0].url} width = 89 height = 160></div>`
+        	html += `<br><div class = "artist-photo"><img src = ${result.images[0].url} width =  200 height = 300></div>`
         }
-        html  +=`</li>`;  
+        html  +=`</div>`;  
       });
       $('.results').append(html);
     
