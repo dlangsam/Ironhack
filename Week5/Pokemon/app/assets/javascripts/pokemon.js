@@ -27,7 +27,12 @@ function loadPokemonModal(response){
 	$(".js-pkmn-sp-attack").text(response.sp_atk);
 	$(".js-pkmn-sp-defense").text(response.sp_def);
 	$(".js-pkmn-speed").text(response.speed);
-	$(".js-evolutions").data('id', response.national_id);
+	if(response.evolutions.length > 0){
+		$(".js-evolutions").data('id', response.national_id);
+		$(".js-evolutions").show();
+	}else{
+		$(".js-evolutions").hide();
+	}
 	var typeList = "";
 	var types = response.types;
 	types.forEach(function(type){
