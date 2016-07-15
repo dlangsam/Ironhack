@@ -157,3 +157,9 @@ progress::-moz-progress-bar {
 form{
   text-align: center;
 }
+
+.modal-photos img{
+  height: 120px;
+
+
+}

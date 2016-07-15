@@ -1,12 +1,14 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="app.js"></script>
 	<script src="search.js"></script>
 	<script src="player.js"></script>
+	<script src="artistSearch.js"></script>
 </head>
 <body>
 	<form class = "js-song-search">
@@ -23,7 +25,7 @@
 
 		<div class="metadata">
 		  <p class="title">Hunger of The Pine</p>
-		  <p class="author">alt-J</p>
+		  <p class="artist">alt-J</p>
 
 		  <div class="seekbar">
 		    <progress value="5" max="30"></progress>
@@ -37,5 +39,43 @@
 		<audio class = "js-player" src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
 	</div>
 
+		<!-- Artist modal view (hidden at first) -->
+<div class="modal fade js-artist-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+
+        <h3 class="modal-title">
+        <span class="modal-artist"></span>
+        </h3>
+      </div><!-- .modal-header -->
+
+      <div class="modal-body">
+ 
+        <dl class="dl-horizontal">
+        <dt>Photos</dt>
+        <dd class = "modal-photos"></dd> 
+        <dt>Genres</dt>
+        <dd class = "modal-genres"></dd>    
+        <dt>Followers</dt>
+        <dd class = "modal-followers"></dd>    
+        <dt>Popularity</dt>
+        <dd class = "modal-popularity"></dd>        
+
+        </dl>
+       
+      </div><!-- .modal-body -->
+
+    </div><!-- .modal-content -->
+  </div><!-- .modal-dialog -->
+</div><!-- .modal -->
+
+
+
 </body>
 </html>
+

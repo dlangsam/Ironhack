@@ -9,10 +9,8 @@ SpotifyApp.Search  = class{
 			success: loadSongResult,
 			error: function(error){
 				console.log("Error loading song");
-			}
-				
-		});
-			
+			}				
+		});		
 	}
 
 
@@ -25,12 +23,13 @@ function loadSongResult(response){
 		var artists = response.tracks.items[0].artists; //this is an array
 		var title = response.tracks.items[0].name;
 		var albumCover = response.tracks.items[0].album.images.length > 0 ? response.tracks.items[0].album.images[0].url : "";
-		var artistString = "";
+		var artistHTML = "";
 		artists.forEach(function(artist){
-			artistString += artist.name + " ";
+			artistHTML += `<button class = "js-artist-name" data-name = "${artist.name}">
+			${artist.name}</button>`;
 		});
 		var image = `<img src = ${albumCover}>`
-		$('.author').text(artistString);
+		$('.artist').html(artistHTML);
 		$('.title').text(title);
 		$('.cover').html(image);
 
