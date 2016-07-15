@@ -11,8 +11,11 @@ PokemonApp.Sprite  = class{
 			url: this.url,
 			success: function(response){
 				createSprite(response, theSprite.image_holder);				
+			},
+			error: function(error){
+				console.log(error);
 			}		
-		});		
+		});		 
 	}
 
 

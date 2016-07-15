@@ -39,20 +39,25 @@ function loadPokemonModal(response){
 		typeList += type.name + " ";
 	});
 	$(".js-pkmn-types").text(typeList);
-	var spriteURI = response.sprites[0].resource_uri;
-	var sprite = new PokemonApp.Sprite(spriteURI, $(".js-pkmn-image") );
-	sprite.render();
+	if (response.sprites.length > 0) {
+		var spriteURI = response.sprites[0].resource_uri;
+		var sprite = new PokemonApp.Sprite(spriteURI, $(".js-pkmn-image") );
+		sprite.render();
+	}
 
-			
-	var description = PokemonApp.lastestDescription(response.descriptions)
-	var descriptionURL = description.resource_uri;
-	$.ajax({
-		url: descriptionURL,
-		success: function(descResponse){
-			$(".js-pkmn-desc").text(descResponse.description);
-			$(".js-pokemon-modal").modal("show");
-		}
-	});			
+	if (response.descriptions.length > 0) {		
+		var description = PokemonApp.lastestDescription(response.descriptions)
+		var descriptionURL = description.resource_uri;
+		$.ajax({
+			url: descriptionURL,
+			success: function(descResponse){
+				$(".js-pkmn-desc").text(descResponse.description);
+				$(".js-pokemon-modal").modal("show");
+			}
+		});	
+	}else{
+		$(".js-pokemon-modal").modal("show");
+	}		
 }
 
 
