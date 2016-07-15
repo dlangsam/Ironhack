@@ -37,7 +37,7 @@ function loadSongResult(response){
 		var audioURL = response.tracks.items[0].preview_url;
 		$('.js-player').attr("src", audioURL);
 		$('.btn-play').removeClass('disabled');
-
+		 $('progress').prop("value",  0);
 		
 	}
 }

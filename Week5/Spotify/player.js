@@ -31,4 +31,16 @@ $(document).on('ready', function(){
 			$('.btn-play').removeClass('playing');
 		}
 	});
+
+	// Define a function to print the player's current time
+	function showProgress () {
+ 		 var current = $('.js-player').prop('currentTime');
+ 		 $('progress').prop("value",  current);
+  		console.log('Current time: ' + current);
+
+	}
+
+
+	// Have printTime be called when the time is updated
+	$('.js-player').on('timeupdate', showProgress);
 });
