@@ -20,8 +20,15 @@ SpotifyApp.Player  = class{
 
 $(document).on('ready', function(){
 	$('.btn-play').on('click', function (event){
-		
-		console.log("Playing song");
-		$('.js-player').trigger('play');
+		var button =  event.currentTarget;
+		if(!$('.btn-play').hasClass('playing')){
+			console.log("Playing song");
+			$('.js-player').trigger('play');
+			$('.btn-play').addClass('playing');
+		}else{
+			console.log("Pausing song");
+			$('.js-player').trigger('pause');
+			$('.btn-play').removeClass('playing');
+		}
 	});
 });
