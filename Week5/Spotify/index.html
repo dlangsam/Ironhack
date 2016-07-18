@@ -5,10 +5,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src="app.js"></script>
-	<script src="search.js"></script>
-	<script src="player.js"></script>
-	<script src="artistSearch.js"></script>
+	<script src="javascripts/app.js"></script>
+	<script src="javascripts/search.js"></script>
+	<script src="javascripts/player.js"></script>
+	<script src="javascripts/artistSearch.js"></script>
+	<script src="javascripts/moreResults.js"></script>
 </head>
 <body>
 	<form class = "js-song-search">
@@ -37,6 +38,9 @@
 		</div>
 		
 		<audio class = "js-player" src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
+		<form class = "js-more-results">
+			<button class = "js-more-button" type = "on-submit">More results</button> 
+		</form>
 	</div>
 
 		<!-- Artist modal view (hidden at first) -->
@@ -67,6 +71,33 @@
         <dd class = "modal-popularity"></dd>        
 
         </dl>
+       
+      </div><!-- .modal-body -->
+
+    </div><!-- .modal-content -->
+  </div><!-- .modal-dialog -->
+</div><!-- .modal -->
+
+		<!-- Artist modal view (hidden at first) -->
+<div class="modal fade js-more-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+
+        <h3 class="modal-title">
+        <span>More results</span>
+        </h3>
+      </div><!-- .modal-header -->
+
+      <div class="modal-body more-results">
+ 
+     
+
+
        
       </div><!-- .modal-body -->
 
