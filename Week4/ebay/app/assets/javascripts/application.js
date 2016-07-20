@@ -14,3 +14,28 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+	$('.js-num-review').on('click', function(event){
+		var id = $(event.currentTarget).data('id');
+		console.log(id);
+		$.ajax({
+			type: "GET",
+			url: '/api/users/' + id + '/seller_reviews',
+			success: showDetails,
+			failure: function(error){
+				console.log("There was an error");
+			}
+
+		});
+
+	})
+
+})
+
+function showDetails(response) {
+	console.log(response);
+	var numReviews = response.seller_reviews.length;
+	$('.js-num-review').html(numReviews);
+	
+
+}

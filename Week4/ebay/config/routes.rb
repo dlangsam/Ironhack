@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+	
+
+	scope "/api" do 
+		resources :users do
+			resources :seller_reviews 
+			
+		end
+	end
 	resources :users do
 	 resources :products  do
 	 	resources :bids
