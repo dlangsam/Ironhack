@@ -8,10 +8,22 @@
   </head>
   <body>
   <div class = "container">AJAX</div>
+  <button>Click here</button>
+  <ul class = "characters">
+  </ul>
   </div>
   <script type = "text/javascript">
   $(document).ready(function(){
-    function fetchCharacters(){
+
+    $('button').on('click', function(){
+      $.ajax({
+        url:"https://ironhack-characters.herokuapp.com/characters",
+        success: showCharacters,
+        error: errorFunction
+
+      })
+    });
+    /*function fetchCharacters(){
       var httpRequest = new XMLHttpRequest();
       httpRequest.open("GET", "https://ironhack-characters.herokuapp.com/characters");
       httpRequest.onreadystatechange = handleResponse;
@@ -28,17 +40,26 @@
           alert("There was an error");
         }
       }
+    }*/
+    function errorFunction(){
+      alert("There was an error")
     }
 
-    function showCharacters (charactersArray){
+    function showCharacters (response){
+      var charactersArray = response;
     var html = "";
       charactersArray.forEach(function (theCharacter){
-        html += '<h1>' + theCharacter.weapon + '</h1>';
+        html += `<li> Name: ${theCharacter.name}</li>`;
+        html += `<li> Job: ${theCharacter.occupation}</li>`;
+        html += `<li> Weapon: ${theCharacter.weapon}</li>`;
+        if(theCharacter.debt){
+          html += `<li> Is in debt</li>`;
+        }
          console.log(theCharacter);
       });
       $('.container').html(html);
     }
-    fetchCharacters();
+    
 
 
 

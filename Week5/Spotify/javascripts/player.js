@@ -14,8 +14,6 @@ SpotifyApp.Player  = class{
 		});
 			
 	}
-
-
 }
 
 $(document).on('ready', function(){
@@ -36,7 +34,6 @@ $(document).on('ready', function(){
 	function showProgress () {
  		 var current = $('.js-player').prop('currentTime');
  		 $('progress').prop("value",  current);
-  		console.log('Current time: ' + current);
 
 	}
 

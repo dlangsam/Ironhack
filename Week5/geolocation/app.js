@@ -32,12 +32,9 @@ $(document).ready(function(){
 
 	}
 	function handleError(error){
-		console.log("There is an error.");
+		console.log("Geolocation not permitted");
 		console.log(error);
-		if(error.code == 1){
-			var html = `<h2>Come on! Give me your location. </h2>`;
-			$("body").append(html);
-		}
+		
 
 	}
 	

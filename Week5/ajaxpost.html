@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> AJAX POST Setup </title>
+  <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <h1> AJAX POST Setup </h1>
+
+  <form class="js-character-form">
+    <div>
+      <label for="name"> Name </label>
+      <input type="text" class = "js-name" name="name" placeholder="C-3PO">
+    </div>
+
+    <div>
+      <label for="occupation"> Occupation </label>
+      <input type="text" class = "js-job" name="occupation" placeholder="Protocol Droid">
+    </div>
+
+    <div>
+      <label for="weapon"> Weapon </label>
+      <input type="text" class = "js-weapon" name="weapon" placeholder="Comic Relief">
+    </div>
+
+    <button type="submit">
+      Create new character
+    </button>
+  </form>
+
+    <button>Click here</button>
+  <ul class = "characters">
+  </ul>
+  </div>
+
+
+    <script type = "text/javascript">
+  $(document).ready(function(){
+
+    $('button').on('click', function(){
+      $.ajax({
+        url:"https://ironhack-characters.herokuapp.com/characters",
+        success: showCharacters,
+        error: handleError
+
+      })
+    });
+
+    $('form').submit(function(event){
+      event.preventDefault();
+        var newCharacter = {
+        name: $('.js-name').val(),
+        occupation: $('.js-job').val(),
+        weapon: $('.js-weapon').val()
+      };
+        $.ajax({type: "POST",url: "https://ironhack-characters.herokuapp.com/characters",
+        data: newCharacter,
+        success: updateList,
+        error: handleError
+
+      });
+
+    });
+    function handleError(error){
+      console.log(error);
+      alert("There was an error");
+    }
+
+    function updateList(){
+      console.log("Updating list");
+
+      var theCharacter = {
+        name: $('.js-name').val(),
+        occupation: $('.js-job').val(),
+        weapon: $('.js-weapon').val()
+      };
+      var html = ""
+        html += `<li> Name: ${theCharacter.name}`;
+        html += `<br>Job: ${theCharacter.occupation}`;
+        html += `<br>Weapon: ${theCharacter.weapon}`;
+        $('.characters').append(html);
+
+
+    }
+
+    function showCharacters (response){
+      console.log(response)
+      var charactersArray = response;
+    var html = "";
+      charactersArray.forEach(function (theCharacter){
+        html += `<li> Name: ${theCharacter.name}`;
+        html += `<br>Job: ${theCharacter.occupation}`;
+        html += `<br>Weapon: ${theCharacter.weapon}`;
+        if(theCharacter.debt){
+          html += `<br> Is in debt`;
+        }
+        html += `</li>`;
+        
+      });
+      $('.characters').html(html);
+    }
+
+  
+    
+
+
+
+  });
+  </script>
+</body>
+</html>

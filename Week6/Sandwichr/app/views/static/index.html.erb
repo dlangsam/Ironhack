@@ -1,0 +1,42 @@
+<h2> The BEST sandwich-related application out there. </h2>
+
+<p>
+  Do you need to configure a sandwich?
+  Look no further!
+</p>
+
+<% if user_signed_in? %>
+
+  <h3> Welcome! <%= current_user.first_name %>. </h3>
+
+  <ul>
+    <li>
+      <a href="/sandwiches">
+        See the list of sandwiches
+      </a>
+    </li>
+
+    <li>
+      <a href="/users/sign_out" data-method="delete">
+        Log out
+      </a>
+    </li>
+  </ul>
+
+<% else %>
+
+  <ul>
+    <li>
+      <a href="/users/sign_in">
+        Log in
+      </a>
+    </li>
+
+    <li>
+      <a href="/users/sign_up">
+        Sign up
+      </a>
+    </li>
+  </ul>
+
+<% end %>

@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+<h2>Welcome <%= current_user.name %>!</h2>
+<%= link_to "logout" , destroy_user_session_path, method: :delete %>
+<% else %>
+<h2> Nobody logged in </h2>
+<% end %>
+
+<h1> Profile for </h1>
+<%= @user.name %>

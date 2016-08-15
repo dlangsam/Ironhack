@@ -1,0 +1,1597 @@
+
+
+Started GET "/" for ::1 at 2016-04-27 10:57:02 -0400
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 982ms (Views: 981.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/tournaments.self-6d2bc1e9c564bdadff8dd9ed601cd16cfebad46dc4033dfdd3055345a9cddc26.css?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-04-27 10:57:04 -0400
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-04-27 10:57:04 -0400
+
+ActionController::RoutingError (No route matches [GET] "/api/tournaments.json"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/josh/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/josh/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/josh/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/josh/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/josh/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (31.5ms)
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-04-27 10:57:08 -0400
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTournaments (20160718220743)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "tournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220743"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreatePlayers (20160718220802)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220802"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateRegistrations (20160718220826)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "registrations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220826"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:30:35.768296"], ["updated_at", "2016-07-19 21:30:35.768296"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:30:35.772215"], ["updated_at", "2016-07-19 21:30:35.772215"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:30:35.774223"], ["updated_at", "2016-07-19 21:30:35.774223"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:30:35.775874"], ["updated_at", "2016-07-19 21:30:35.775874"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:30:35.777431"], ["updated_at", "2016-07-19 21:30:35.777431"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:30:35.779210"], ["updated_at", "2016-07-19 21:30:35.779210"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:30:35.784890"], ["updated_at", "2016-07-19 21:30:35.784890"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:30:35.786795"], ["updated_at", "2016-07-19 21:30:35.786795"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:30:35.788460"], ["updated_at", "2016-07-19 21:30:35.788460"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:32:53.277539"], ["updated_at", "2016-07-19 21:32:53.277539"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:32:53.282055"], ["updated_at", "2016-07-19 21:32:53.282055"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:32:53.283624"], ["updated_at", "2016-07-19 21:32:53.283624"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:32:53.285058"], ["updated_at", "2016-07-19 21:32:53.285058"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:32:53.286471"], ["updated_at", "2016-07-19 21:32:53.286471"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:32:53.287876"], ["updated_at", "2016-07-19 21:32:53.287876"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:32:53.293831"], ["updated_at", "2016-07-19 21:32:53.293831"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:32:53.295663"], ["updated_at", "2016-07-19 21:32:53.295663"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:32:53.297198"], ["updated_at", "2016-07-19 21:32:53.297198"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:33:31.583773"], ["updated_at", "2016-07-19 21:33:31.583773"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:33:31.587767"], ["updated_at", "2016-07-19 21:33:31.587767"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:33:31.590030"], ["updated_at", "2016-07-19 21:33:31.590030"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:33:31.591880"], ["updated_at", "2016-07-19 21:33:31.591880"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:33:31.593770"], ["updated_at", "2016-07-19 21:33:31.593770"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:33:31.595710"], ["updated_at", "2016-07-19 21:33:31.595710"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:33:31.601969"], ["updated_at", "2016-07-19 21:33:31.601969"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:33:31.604059"], ["updated_at", "2016-07-19 21:33:31.604059"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:33:31.605882"], ["updated_at", "2016-07-19 21:33:31.605882"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:34:17.519891"], ["updated_at", "2016-07-19 21:34:17.519891"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:34:17.524991"], ["updated_at", "2016-07-19 21:34:17.524991"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:34:17.526830"], ["updated_at", "2016-07-19 21:34:17.526830"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:34:17.528548"], ["updated_at", "2016-07-19 21:34:17.528548"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:34:17.530165"], ["updated_at", "2016-07-19 21:34:17.530165"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:34:17.531759"], ["updated_at", "2016-07-19 21:34:17.531759"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:34:17.538209"], ["updated_at", "2016-07-19 21:34:17.538209"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:34:17.540269"], ["updated_at", "2016-07-19 21:34:17.540269"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:34:17.541878"], ["updated_at", "2016-07-19 21:34:17.541878"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:35:18.866170"], ["updated_at", "2016-07-19 21:35:18.866170"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:35:18.872272"], ["updated_at", "2016-07-19 21:35:18.872272"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:35:18.873935"], ["updated_at", "2016-07-19 21:35:18.873935"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:35:18.875871"], ["updated_at", "2016-07-19 21:35:18.875871"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:35:18.877781"], ["updated_at", "2016-07-19 21:35:18.877781"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:35:18.879283"], ["updated_at", "2016-07-19 21:35:18.879283"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:35:18.886004"], ["updated_at", "2016-07-19 21:35:18.886004"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:35:18.888696"], ["updated_at", "2016-07-19 21:35:18.888696"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:35:18.891130"], ["updated_at", "2016-07-19 21:35:18.891130"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTournaments (20160718220743)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "tournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220743"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreatePlayers (20160718220802)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220802"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateRegistrations (20160718220826)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "registrations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220826"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:36:00.877034"], ["updated_at", "2016-07-19 21:36:00.877034"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:36:00.881609"], ["updated_at", "2016-07-19 21:36:00.881609"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:36:00.883195"], ["updated_at", "2016-07-19 21:36:00.883195"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:36:00.885037"], ["updated_at", "2016-07-19 21:36:00.885037"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:36:00.886993"], ["updated_at", "2016-07-19 21:36:00.886993"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:36:00.888707"], ["updated_at", "2016-07-19 21:36:00.888707"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:36:00.894501"], ["updated_at", "2016-07-19 21:36:00.894501"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:36:00.896356"], ["updated_at", "2016-07-19 21:36:00.896356"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:36:00.897906"], ["updated_at", "2016-07-19 21:36:00.897906"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:36:53.205305"], ["updated_at", "2016-07-19 21:36:53.205305"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:36:53.210319"], ["updated_at", "2016-07-19 21:36:53.210319"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:36:53.212060"], ["updated_at", "2016-07-19 21:36:53.212060"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:36:53.213681"], ["updated_at", "2016-07-19 21:36:53.213681"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:36:53.215184"], ["updated_at", "2016-07-19 21:36:53.215184"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:36:53.216648"], ["updated_at", "2016-07-19 21:36:53.216648"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:36:53.222766"], ["updated_at", "2016-07-19 21:36:53.222766"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:36:53.224554"], ["updated_at", "2016-07-19 21:36:53.224554"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:36:53.226215"], ["updated_at", "2016-07-19 21:36:53.226215"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:37:18.127037"], ["updated_at", "2016-07-19 21:37:18.127037"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:37:18.132202"], ["updated_at", "2016-07-19 21:37:18.132202"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:37:18.134663"], ["updated_at", "2016-07-19 21:37:18.134663"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:37:18.136602"], ["updated_at", "2016-07-19 21:37:18.136602"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:37:18.138138"], ["updated_at", "2016-07-19 21:37:18.138138"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:37:18.140311"], ["updated_at", "2016-07-19 21:37:18.140311"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:37:18.146052"], ["updated_at", "2016-07-19 21:37:18.146052"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:37:18.147950"], ["updated_at", "2016-07-19 21:37:18.147950"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:37:18.149603"], ["updated_at", "2016-07-19 21:37:18.149603"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:37:22.716035"], ["updated_at", "2016-07-19 21:37:22.716035"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:37:22.720582"], ["updated_at", "2016-07-19 21:37:22.720582"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:37:22.722245"], ["updated_at", "2016-07-19 21:37:22.722245"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:37:22.723695"], ["updated_at", "2016-07-19 21:37:22.723695"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:37:22.725273"], ["updated_at", "2016-07-19 21:37:22.725273"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:37:22.727009"], ["updated_at", "2016-07-19 21:37:22.727009"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:37:22.735326"], ["updated_at", "2016-07-19 21:37:22.735326"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:37:22.737433"], ["updated_at", "2016-07-19 21:37:22.737433"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:37:22.739371"], ["updated_at", "2016-07-19 21:37:22.739371"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:37:31.356508"], ["updated_at", "2016-07-19 21:37:31.356508"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:37:31.361894"], ["updated_at", "2016-07-19 21:37:31.361894"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:37:31.364110"], ["updated_at", "2016-07-19 21:37:31.364110"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:37:31.365935"], ["updated_at", "2016-07-19 21:37:31.365935"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:37:31.367746"], ["updated_at", "2016-07-19 21:37:31.367746"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:37:31.370190"], ["updated_at", "2016-07-19 21:37:31.370190"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:37:31.376921"], ["updated_at", "2016-07-19 21:37:31.376921"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:37:31.379198"], ["updated_at", "2016-07-19 21:37:31.379198"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:37:31.381339"], ["updated_at", "2016-07-19 21:37:31.381339"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:38:38.805101"], ["updated_at", "2016-07-19 21:38:38.805101"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:38:38.809918"], ["updated_at", "2016-07-19 21:38:38.809918"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:38:38.811602"], ["updated_at", "2016-07-19 21:38:38.811602"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:38:38.813344"], ["updated_at", "2016-07-19 21:38:38.813344"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:38:38.815125"], ["updated_at", "2016-07-19 21:38:38.815125"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:38:38.816707"], ["updated_at", "2016-07-19 21:38:38.816707"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:38:38.823266"], ["updated_at", "2016-07-19 21:38:38.823266"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:38:38.825368"], ["updated_at", "2016-07-19 21:38:38.825368"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:38:38.827258"], ["updated_at", "2016-07-19 21:38:38.827258"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mTournament Load (1.0ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+  [1m[35mTournament Load (0.2ms)[0m  SELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT  "players".* FROM "players" WHERE "players"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPlayer Load (0.1ms)[0m  SELECT  "players".* FROM "players" WHERE "players"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddPlayerIdToRegistration (20160719214239)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "registrations" ADD "player_id" integer[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160719214239"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddTournamentIdToRegistration (20160719214304)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "registrations" ADD "tournament_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160719214304"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTournaments (20160718220743)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "tournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220743"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreatePlayers (20160718220802)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220802"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateRegistrations (20160718220826)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "registrations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220826"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Migrating to AddPlayerIdToRegistration (20160719214239)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "registrations" ADD "player_id" integer
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160719214239"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddTournamentIdToRegistration (20160719214304)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "registrations" ADD "tournament_id" integer
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160719214304"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTournaments (20160718220743)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "tournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220743"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreatePlayers (20160718220802)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220802"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to CreateRegistrations (20160718220826)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "registrations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718220826"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Migrating to AddPlayerIdToRegistration (20160719214239)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "registrations" ADD "player_id" integer
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160719214239"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to AddTournamentIdToRegistration (20160719214304)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "registrations" ADD "tournament_id" integer
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160719214304"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:45:18.037549"], ["updated_at", "2016-07-19 21:45:18.037549"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:45:18.042698"], ["updated_at", "2016-07-19 21:45:18.042698"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:45:18.044286"], ["updated_at", "2016-07-19 21:45:18.044286"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:45:18.045753"], ["updated_at", "2016-07-19 21:45:18.045753"]]
+  [1m[36m (0.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:45:18.047185"], ["updated_at", "2016-07-19 21:45:18.047185"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:45:18.048679"], ["updated_at", "2016-07-19 21:45:18.048679"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:45:18.054198"], ["updated_at", "2016-07-19 21:45:18.054198"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:45:18.056136"], ["updated_at", "2016-07-19 21:45:18.056136"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:45:18.058188"], ["updated_at", "2016-07-19 21:45:18.058188"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:45:59.531862"], ["updated_at", "2016-07-19 21:45:59.531862"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:45:59.536448"], ["updated_at", "2016-07-19 21:45:59.536448"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:45:59.538036"], ["updated_at", "2016-07-19 21:45:59.538036"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:45:59.539539"], ["updated_at", "2016-07-19 21:45:59.539539"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:45:59.541272"], ["updated_at", "2016-07-19 21:45:59.541272"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:45:59.543010"], ["updated_at", "2016-07-19 21:45:59.543010"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:45:59.549490"], ["updated_at", "2016-07-19 21:45:59.549490"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:45:59.551326"], ["updated_at", "2016-07-19 21:45:59.551326"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:45:59.552808"], ["updated_at", "2016-07-19 21:45:59.552808"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["tournament_id", 4], ["player_id", 7], ["created_at", "2016-07-19 21:45:59.572686"], ["updated_at", "2016-07-19 21:45:59.572686"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tournament_id", 4], ["player_id", 8], ["created_at", "2016-07-19 21:45:59.575402"], ["updated_at", "2016-07-19 21:45:59.575402"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["tournament_id", 4], ["player_id", 9], ["created_at", "2016-07-19 21:45:59.577874"], ["updated_at", "2016-07-19 21:45:59.577874"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tournament_id", 4], ["player_id", 10], ["created_at", "2016-07-19 21:45:59.580308"], ["updated_at", "2016-07-19 21:45:59.580308"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["tournament_id", 4], ["player_id", 11], ["created_at", "2016-07-19 21:45:59.582569"], ["updated_at", "2016-07-19 21:45:59.582569"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tournament_id", 5], ["player_id", 7], ["created_at", "2016-07-19 21:45:59.585437"], ["updated_at", "2016-07-19 21:45:59.585437"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["tournament_id", 5], ["player_id", 10], ["created_at", "2016-07-19 21:45:59.587681"], ["updated_at", "2016-07-19 21:45:59.587681"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tournament_id", 5], ["player_id", 11], ["created_at", "2016-07-19 21:45:59.589797"], ["updated_at", "2016-07-19 21:45:59.589797"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["tournament_id", 5], ["player_id", 12], ["created_at", "2016-07-19 21:45:59.592155"], ["updated_at", "2016-07-19 21:45:59.592155"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Devorah"], ["created_at", "2016-07-19 21:47:56.410325"], ["updated_at", "2016-07-19 21:47:56.410325"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Dan"], ["created_at", "2016-07-19 21:47:56.414942"], ["updated_at", "2016-07-19 21:47:56.414942"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jessica"], ["created_at", "2016-07-19 21:47:56.416685"], ["updated_at", "2016-07-19 21:47:56.416685"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Joe"], ["created_at", "2016-07-19 21:47:56.418195"], ["updated_at", "2016-07-19 21:47:56.418195"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Betty"], ["created_at", "2016-07-19 21:47:56.419761"], ["updated_at", "2016-07-19 21:47:56.419761"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Michael"], ["created_at", "2016-07-19 21:47:56.421290"], ["updated_at", "2016-07-19 21:47:56.421290"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Family Olympics"], ["created_at", "2016-07-19 21:47:56.430504"], ["updated_at", "2016-07-19 21:47:56.430504"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Golf"], ["created_at", "2016-07-19 21:47:56.432679"], ["updated_at", "2016-07-19 21:47:56.432679"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beer Pong"], ["created_at", "2016-07-19 21:47:56.434705"], ["updated_at", "2016-07-19 21:47:56.434705"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["tournament_id", 7], ["player_id", 13], ["created_at", "2016-07-19 21:47:56.456472"], ["updated_at", "2016-07-19 21:47:56.456472"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tournament_id", 7], ["player_id", 14], ["created_at", "2016-07-19 21:47:56.459210"], ["updated_at", "2016-07-19 21:47:56.459210"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["tournament_id", 7], ["player_id", 15], ["created_at", "2016-07-19 21:47:56.462462"], ["updated_at", "2016-07-19 21:47:56.462462"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tournament_id", 7], ["player_id", 16], ["created_at", "2016-07-19 21:47:56.464928"], ["updated_at", "2016-07-19 21:47:56.464928"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["tournament_id", 7], ["player_id", 17], ["created_at", "2016-07-19 21:47:56.468002"], ["updated_at", "2016-07-19 21:47:56.468002"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tournament_id", 8], ["player_id", 13], ["created_at", "2016-07-19 21:47:56.471166"], ["updated_at", "2016-07-19 21:47:56.471166"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["tournament_id", 8], ["player_id", 16], ["created_at", "2016-07-19 21:47:56.473378"], ["updated_at", "2016-07-19 21:47:56.473378"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tournament_id", 8], ["player_id", 17], ["created_at", "2016-07-19 21:47:56.475467"], ["updated_at", "2016-07-19 21:47:56.475467"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["tournament_id", 8], ["player_id", 18], ["created_at", "2016-07-19 21:47:56.477850"], ["updated_at", "2016-07-19 21:47:56.477850"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tournament_id", 9], ["player_id", 13], ["created_at", "2016-07-19 21:47:56.480948"], ["updated_at", "2016-07-19 21:47:56.480948"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "registrations" ("tournament_id", "player_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["tournament_id", 9], ["player_id", 18], ["created_at", "2016-07-19 21:47:56.483862"], ["updated_at", "2016-07-19 21:47:56.483862"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2016-07-19 17:48:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 570ms (Views: 569.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-79eb93a726a1f776486faa4c3340c7351765f63ee9ac416860ae860729d7d0eb.css?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-07-19 17:48:33 -0400
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-07-19 17:48:33 -0400
+
+ActionController::RoutingError (No route matches [GET] "/api/tournaments.json"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (11.3ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 18:26:53 -0400
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/tournaments.self-79eb93a726a1f776486faa4c3340c7351765f63ee9ac416860ae860729d7d0eb.css?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-07-19 18:26:53 -0400
+Processing by TournamentsController#get_tournaments as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 14ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-07-19 18:26:53 -0400
+
+
+Started GET "/tournaments/1" for ::1 at 2016-07-19 18:26:59 -0400
+
+ActionController::RoutingError (No route matches [GET] "/tournaments/1"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.6ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.6ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.2ms)
+  [1m[36mTournament Load (1.0ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+
+
+Started POST "/api/tournaments" for ::1 at 2016-07-19 18:28:02 -0400
+
+ActionController::RoutingError (No route matches [POST] "/api/tournaments"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (14.4ms)
+
+
+Started POST "/api/tournaments" for ::1 at 2016-07-19 18:28:35 -0400
+
+ActionController::RoutingError (No route matches [POST] "/api/tournaments"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (13.9ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 18:32:20 -0400
+
+NoMethodError (undefined method `pots' for #<ActionDispatch::Routing::Mapper:0x007f853fd729d8>
+Did you mean?  post
+               puts):
+  config/routes.rb:5:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.5ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.0ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (70.1ms)
+
+
+Started GET "/" for ::1 at 2016-07-19 18:32:34 -0400
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/tournaments.self-79eb93a726a1f776486faa4c3340c7351765f63ee9ac416860ae860729d7d0eb.css?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-19 18:32:34 -0400
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-07-19 18:32:35 -0400
+Processing by TournamentsController#get_tournaments as JSON
+  [1m[36mTournament Load (0.5ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-07-19 18:32:35 -0400
+
+
+Started POST "/api/tournaments" for ::1 at 2016-07-19 18:32:41 -0400
+
+ActionController::RoutingError (uninitialized constant TournamentController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (13.9ms)
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-07-19 18:32:46 -0400
+
+
+Started POST "/api/tournaments" for ::1 at 2016-07-19 18:33:01 -0400
+
+ActionController::RoutingError (uninitialized constant TournamentController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (13.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-20 09:25:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 218ms (Views: 217.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-79eb93a726a1f776486faa4c3340c7351765f63ee9ac416860ae860729d7d0eb.css?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-07-20 09:25:23 -0400
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-07-20 09:25:23 -0400
+Processing by TournamentsController#index as JSON
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template tournaments/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/devorahlangsam/Ironhack/Week6/video-games-tournament-master/app/views"
+):
+  app/controllers/tournaments_controller.rb:3:in `index'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.4ms)
+
+
+Started GET "/index" for ::1 at 2016-07-20 09:25:41 -0400
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.6ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.9ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (87.1ms)
+
+
+Started GET "/tournaments/index" for ::1 at 2016-07-20 09:25:48 -0400
+
+ActionController::RoutingError (No route matches [GET] "/tournaments/index"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.6ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.6ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (82.0ms)
+
+
+Started GET "/api/tournaments/index" for ::1 at 2016-07-20 09:26:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/api/tournaments/index"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/devorahlangsam/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.8ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.3ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.2ms)
+
+
+Started GET "/api/tournaments/" for ::1 at 2016-07-20 09:26:21 -0400
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-07-20 09:26:21 -0400
+Processing by TournamentsController#index as JSON
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template tournaments/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/Users/devorahlangsam/Ironhack/Week6/video-games-tournament-master/app/views"
+):
+  app/controllers/tournaments_controller.rb:3:in `index'
+
+
+  Rendered /Users/devorahlangsam/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.text.erb (0.3ms)
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-07-20 09:26:21 -0400
+
+
+Started GET "/api/tournaments/" for ::1 at 2016-07-20 09:32:12 -0400
+Processing by TournamentsApiController#index as HTML
+  [1m[35mTournament Load (0.5ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 11ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-20 09:32:16 -0400
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 138ms (Views: 137.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-20 09:32:16 -0400
+
+
+Started GET "/assets/tournaments_api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-07-20 09:32:16 -0400
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-07-20 09:32:16 -0400
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-07-20 09:32:16 -0400
+Processing by TournamentsApiController#index as JSON
+  [1m[36mTournament Load (0.4ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-07-20 09:32:16 -0400
+
+
+Started GET "/" for ::1 at 2016-07-20 09:41:38 -0400
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/tournaments.self-79eb93a726a1f776486faa4c3340c7351765f63ee9ac416860ae860729d7d0eb.css?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/tournaments_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/tournaments_api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-07-20 09:41:38 -0400
+Processing by TournamentsApiController#index as JSON
+  [1m[35mTournament Load (0.5ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 14ms (Views: 6.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-07-20 09:41:38 -0400
+
+
+Started POST "/api/tournaments" for ::1 at 2016-07-20 09:41:45 -0400
+Processing by TournamentsApiController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xXyfq98DSOy8opt3IU9GD/Rx3cwX8BSaYbwoLUV8F/2OHKf53ZWoqdPAz26SfMfFnz5rh9l/lkhJuEfc63Q0fw==", "tournament"=>{"name"=>"Volleyball"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Volleyball"], ["created_at", "2016-07-20 13:41:45.320448"], ["updated_at", "2016-07-20 13:41:45.320448"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-07-20 09:41:50 -0400
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/tournaments.self-79eb93a726a1f776486faa4c3340c7351765f63ee9ac416860ae860729d7d0eb.css?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/tournaments_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/tournaments_api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-07-20 09:41:50 -0400
+Processing by TournamentsApiController#index as JSON
+  [1m[35mTournament Load (0.3ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-07-20 09:41:50 -0400
+
+
+Started GET "/" for ::1 at 2016-07-20 09:42:07 -0400
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/tournaments_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/tournaments.self-79eb93a726a1f776486faa4c3340c7351765f63ee9ac416860ae860729d7d0eb.css?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/tournaments_api.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started GET "/api/tournaments.json" for ::1 at 2016-07-20 09:42:07 -0400
+Processing by TournamentsApiController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 12ms (Views: 4.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2016-07-20 09:42:07 -0400
+
+
+Started POST "/api/tournaments" for ::1 at 2016-07-20 09:42:29 -0400
+Processing by TournamentsApiController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BuDjfeK7c1x3T0A/7ncvvrChEb9wKpvjjwvt+WpiNC9NgNsv4C2TGRgtFCZdRK502+6n9L6lGTGnD4IIxGoXrQ==", "tournament"=>{"name"=>"Ping pong"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ping pong"], ["created_at", "2016-07-20 13:42:29.537676"], ["updated_at", "2016-07-20 13:42:29.537676"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 201 Created in 7ms (Views: 0.8ms | ActiveRecord: 2.7ms)
